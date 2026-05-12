@@ -1,0 +1,378 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Воспоминания</title>
+<link href="style.css" rel="stylesheet">
+</head>
+
+<body>
+	<section>
+		<p class="tit-line"></p>
+		<p class="tit-line"></p>
+		<h1 style="text-align: center; margin:5% 5%; font-size: 40px; padding: 2%">CSS урок 11. Свойства таблицы и табличная верстка</h1>
+		<p class="tit-line"></p>
+		<div class="block1" style="line-height: 1.5;"><b>Цель урока: </b> Знакомство со свойствами таблицы и с принципами табличной верстки CSS</div>
+		<div class="navigation">
+		<a href="index10.html" class="button">Назад</a>
+		<a href="index.html" class="button">К оглавлению</a>
+		<a href="index12.html" class="button">Далее</a>
+		</div>
+	<hr>
+	
+		<div class="content">
+			<h2>Содержание:</h2>
+			<a href="#11_1">Свойства таблицы</a><br>
+			<a href="#11_2" style="margin-left: 30px">border</a><br>
+			<a href="#11_3" style="margin-left: 30px">border-collapse (слияние границы)</a><br>
+			<a href="#11_4" style="margin-left: 30px">width и height (высота и ширина таблицы)</a><br>
+			<a href="#11_5" style="margin-left: 30px">text-align (выравнивание по горизонтали)</a><br>
+			<a href="#11_6" style="margin-left: 30px">vertical-align (выравнивание по вертикали)</a><br>
+			<a href="#11_7" style="margin-left: 30px">padding (внутренние отступы в таблице)</a><br>
+			<a href="#11_8" style="margin-left: 30px">background-color (задний фон) color (цвет текста)</a><br>
+			<a href="#11_9">Табличная верстка CSS</a><br>
+			<a href="#11_10" style="margin-left: 30px">Табличная верстка из двух колонок</a><br>
+			<a href="#11_11" style="margin-left: 30px">Табличная верстка из трех колонок</a><br>
+			<a href="#11_12" style="margin-left: 30px">Использование вложенной таблицы в резиновом макете</a><br>
+		</div>
+	
+		<p class="tit-line"></p>
+		<h1 id="11_1" class="ogl">Свойства таблицы</h1>
+		<p class="tit-line"></p>
+		<p>Рассмотрим основные CSS свойства таблицы</p>
+			
+			
+		<p class="tit-line"></p>
+		<h1 id="11_2" class="ogl"><span style="color:#B4586D;">BORDER</span></h1>
+		<p>Свойство рассматривается в одном из предыдущих уроков и включает одновременно несколько свойств:</p>
+		<p class="tit-line"></p>
+        <div class="square">
+		   <li style="font-size:20px;margin-bottom:8px;">BORDER-STYLE (СТИЛЬ ГРАНИЦЫ)</li>
+		   <li style="font-size:20px;margin-bottom:8px;">BORDER-WIDTH (ШИРИНА ГРАНИЦЫ)</li>
+		  <li style="font-size:20px;margin-bottom:8px;">BORDER-COLOR (ЦВЕТ ГРАНИЦЫ)</li>
+	    </div>
+		<p class="tit-line"></p>
+		<p><b>Существует также сборное правило:</b></p>
+		<p class="tit-line"></p>
+		фото
+	  
+
+	
+        <p class="tit-line"></p>
+	    <h1 id="11_3" class="ogl"><span style="color:#B4586D;">BORDER-COLLAPSE (СЛИЯНИЕ ГРАНИЦЫ)</span></h1>
+		<p><b>Значения:</b></p>
+		<p class="tit-line"></p>
+	  <ul>
+          <li style="font-size:20px;margin-bottom:8px;"><span style="color:#FF0000;"><a style="background: #FFD3D3; border-radius: 5px;">collapse</a></span> (слитая граница)</li>
+		  <li style="font-size:20px;margin-bottom:8px;"><span style="color:#FF0000;"><a style="background: #FFD3D3; border-radius: 5px;">separate</a></span>  (вокруг каждой ячейки — своя собственная рамка)</li>
+      </ul>
+		 <p class="tit-line"></p>
+		  <p><b>Пример:</b></p>
+		  фото
+		  <p><b>Результат:</b></p>
+	      фото
+		
+		
+		  <p class="tit-line"></p>
+	      <h1 id="11_4" class="ogl"><span style="color:#B4586D;">WIDTN И HEIGHT (ВЫСОТА И ШИРИНА ТАБЛИЦЫ)</span></h1>
+		  <p><b>Значения:</b></p>
+		<p class="tit-line"></p>
+	 <ul>
+          <li style="font-size:20px;margin-bottom:8px;"><span style="color:#FF0000;"><a style="background: #FFD3D3; border-radius: 5px;">px</a></span></li>
+		  <li style="font-size:20px;margin-bottom:8px;"><span style="color:#FF0000;"><a style="background: #FFD3D3; border-radius: 5px;">%</a></span></li>
+	 </ul>
+		<p class="tit-line"></p>
+		  <p><b>Пример:</b></p>
+		<p class="tit-line"></p>
+	      фото
+		  <p><b>Результат:</b></p>
+	      фото
+		
+		
+		
+		  <p class="tit-line"></p>
+	      <h1 id="11_5" class="ogl"><span style="color:#B4586D;">TEXT-ALIGN (ВЫРАВНИВАНИЕ ПО ГОРИЗОНТАЛИ)</span></h1>
+		  <p><b>Значения:</b></p>
+		  <p class="tit-line"></p>
+		  <ul>
+          <li style="font-size:20px;margin-bottom:8px;"><span style="color:#FF0000;"><a style="background: #FFD3D3; border-radius: 5px;">center</a></span> (по центру)</li>
+		  <li style="font-size:20px;margin-bottom:8px;"><span style="color:#FF0000;"><a style="background: #FFD3D3; border-radius: 5px;">left</a></span> (по левому краю)</li>
+		  <li style="font-size:20px;margin-bottom:8px;"><span style="color:#FF0000;"><a style="background: #FFD3D3; border-radius: 5px;">right</a></span> (по правому краю)</li>
+		  <li style="font-size:20px;margin-bottom:8px;"><span style="color:#FF0000;"><a style="background: #FFD3D3; border-radius: 5px;">justify</a></span> (по ширине)</li>
+      </ul>
+	
+		
+		
+		<p class="tit-line"></p>
+	      <h1 id="11_6" class="ogl"><span style="color:#B4586D;">VERTICAL-ALIGN (ВЫРАВНИВАНИЕ ПО ВЕРТИКАЛИ)</span></h1>
+         <p><b>Значения:</b></p>
+		<p class="tit-line"></p>
+		  <ul>
+          <li style="font-size:20px;margin-bottom:8px;"><span style="color:#FF0000;"><a style="background: #FFD3D3; border-radius: 5px;">baseline</a></span> (по базовой линии)</li>
+		  <li style="font-size:20px;margin-bottom:8px;"><span style="color:#FF0000;"><a style="background: #FFD3D3; border-radius: 5px;">sub</a></span> (как подиндекс)</li>
+		  <li style="font-size:20px;margin-bottom:8px;"><span style="color:#FF0000;"><a style="background: #FFD3D3; border-radius: 5px;">super</a></span> (как надиндекс)</li>
+		  <li style="font-size:20px;margin-bottom:8px;"><span style="color:#FF0000;"><a style="background: #FFD3D3; border-radius: 5px;">top</a></span> (по верхнему краю)</li>
+		  <li style="font-size:20px;margin-bottom:8px;"><span style="color:#FF0000;"><a style="background: #FFD3D3; border-radius: 5px;">middle</a></span> (посередине)</li>
+		  <li style="font-size:20px;margin-bottom:8px;"><span style="color:#FF0000;"><a style="background: #FFD3D3; border-radius: 5px;">bottom</a></span> (по нижнему краю)</li>
+	      <li style="font-size:20px;margin-bottom:8px;"><span style="color:#FF0000;"><a style="background: #FFD3D3; border-radius: 5px;">%</a></span> (от высоты межстрочного интервала)</li>
+	  </ul>
+		<p class="tit-line"></p>
+	  <p><b>Пример:</b></p>
+		<p class="tit-line"></p>
+	      фото
+		 <p><b>Результат:</b></p>
+	      фото
+		
+		
+		
+		<p class="tit-line"></p>
+      <h1 id="11_7" class="ogl"><span style="color:#B4586D;">PADDING (ВНУТРЕННИЕ ОТСТУПЫ В ТАБЛИЦЕ)</span></h1>
+         <p>Данное свойство полностью соответствует правилам данного свойства для всех элементов. Поэтому рассмотреть его можно в одном из предыдущих уроков.</p>
+		<p class="tit-line"></p>
+
+		
+		<p class="tit-line"></p>
+	      <h1 id="11_8" class="ogl"><span style="color:#B4586D;">BACKGROUND-COLOR (ЗАДНИЙ ФОН)
+		  COLOR (ЦВЕТ ТЕКСТА)</span></h1>
+         <p>Данные свойства соответствуют правилом их определения для всех остальных элементов. Поэтому темы можно рассмотреть из предыдущих уроков: задний фон и цвет.</p>
+		<div class="block1">
+		<ul>
+		<p><b>Задание:</b><br>
+        Открыть/создть файл <i>style.css</i>:</p>	
+		<br>
+		<p>1. Добавить свойства для следующих тегов (если еще не добавлены):</p>
+		<ul>
+		  <li style="font-size:20px;margin-bottom:8px;"><span style="color:#FF0000;"><a style="background: #FFD3D3; border-radius: 5px;">body</a></span> (по базовой линии)</li>
+			
+		  <li style="font-size:20px;margin-bottom:8px;"><span style="color:#FF0000;"><a style="background: #FFD3D3; border-radius: 5px;">p</a></span> (как подиндекс)</li>
+			
+		  <li style="font-size:20px;margin-bottom:8px;"><span style="color:#FF0000;"><a style="background: #FFD3D3; border-radius: 5px;">a</a></span> (как надиндекс)</li>
+			
+		  <li style="font-size:20px;margin-bottom:8px;"><span style="color:#FF0000;"><a style="background: #FFD3D3; border-radius: 5px;">h1</a></span>, <span style="color:#FF0000;"><a style="background: #FFD3D3; border-radius: 5px;">h2</a></span>, <span style="color:#FF0000;"><a style="background: #FFD3D3; border-radius: 5px;">h3</a></span>, … заголовки</li>
+			
+		  <li style="font-size:20px;margin-bottom:8px;"><span style="color:#FF0000;"><a style="background: #FFD3D3; border-radius: 5px;">ul</a></span>, <span style="color:#FF0000;"><a style="background: #FFD3D3; border-radius: 5px;">ol</a></span>, <span style="color:#FF0000;"><a style="background: #FFD3D3; border-radius: 5px;">li</a></span> списки, пункты списков</li>
+			
+		  <li style="font-size:20px;margin-bottom:8px;"><span style="color:#FF0000;"><a style="background: #FFD3D3; border-radius: 5px;">table</a></span>, <span style="color:#FF0000;"><a style="background: #FFD3D3; border-radius: 5px;">tr</a></span>, <span style="color:#FF0000;"><a style="background: #FFD3D3; border-radius: 5px;">td</a></span></li>
+			
+	      <li style="font-size:20px;margin-bottom:8px;"><span style="color:#FF0000;"><a style="background: #FFD3D3; border-radius: 5px;">hr</a></span> (от высоты межстрочного интервала)</li>
+			
+		  <li style="font-size:20px;margin-bottom:8px;"><span style="color:#FF0000;"><a style="background: #FFD3D3; border-radius: 5px;">span</a></span>, <span style="color:#FF0000;"><a style="background: #FFD3D3; border-radius: 5px;">div</a></span> строчный тег, блочный тег</li>
+	    </ul>
+		<p class="tit-line"></p>
+		<p>2. Добавить комментарий с пояснением к каждому свойству:</p>
+		фото	
+		<p>3. Прикрепите стилевой файл к какой-либо готовой веб-странице</p>
+		</ul>
+		</div>
+		
+		
+		
+		
+		<p class="tit-line"></p>
+		<h1 id="11_9" class="ogl">Табличная верстка CSS</h1>
+		<p style="line-height: 1.5;">Благодаря большому числу свойств таблиц и вариациям их оформления, таблицы долгое время были некоторым станартом верстки веб-страниц. Если сделать границы таблицы невидимыми, то можно использовать ее отдельные ячейки в качестве отдельных блоков сраницы: шапка, меню, подвал и т.п.</p>
+        <p style="line-height: 1.5;">Но это не совсем правильно, ведь каждому тегу есть свое назначение, и таблицы не должны были служить для верстки страниц. Однако отсутствие альтернативы сподвигало дизайнеров именно на такой метод верстки.</p>
+        <p style="line-height: 1.5;">Сейчас есть другой способ — использование слоев, которые постепенно заменили таблицы в этом виде работы с веб-страницей. Однако и в наше время некоторые дизайнеры успешно используют табличную верстку.</p>
+		
+	
+		
+		<p class="tit-line"></p>
+	    <h1 style="font-size: 35px;" id="11_10" class="ogl">Табличная верстка из двух колонок</h1>
+		<p class="tit-line"></p>
+        <p>Один из самых распространённых способов верстки — две колонки, т.е. страница делится на две части.</p>
+          <li style="font-size:20px;margin-bottom:8px;">Обычно левая часть — меню и дополнительные элементы, а правая часть — основная, для главного контента.</li>
+		
+		  <li style="font-size:20px;margin-bottom:8px;">В таком случае ширина левой части задается определенным значением, т.е. жестко, а правая часть занимает оставшуюся область страницы.</li>
+		
+		  <li style="font-size:20px;margin-bottom:8px;">В таком случае необходимо задать общую ширину всей таблицы (тега <span style="color:#FF0000;"><a style="background: #FFD3D3; border-radius: 5px;">table</a></span>) в процентах через свойство <span style="color:#FF0000;"><a style="background: #FFD3D3; border-radius: 5px;">width</a></span> (100%), а для первой ячейки (тега <span style="color:#FF0000;"><a style="background: #FFD3D3; border-radius: 5px;">td</a></span>) установить ширину (также свойство <span style="color:#FF0000;"><a style="background: #FFD3D3; border-radius: 5px;">width</a></span>) в пикселах или процентах.</li>
+		<p class="tit-line"></p>
+		<div class="block2">
+			<ul>
+		<p style="line-height: 1.5;"><b>Пример:</b> задать основной каркас страницы из двух колонок: первая — с фиксированным размером, вторая — на оставшуюся область браузера. Выполнить задание используя CSS стили (метод вложения)</p>
+		    </ul>
+		</div>
+	    <p><b>Выполнение:</b></p>
+		<p class="tit-line"></p>
+	    фото
+		<p><b>Результат:</b></p>
+	    фото
+		<p class="tit-line"></p>
+	    <li  style="font-size:20px;margin-bottom:8px;">Теперь попробуем визуально отделить две колонки таблицы друг от друга.</li>
+		<p class="tit-line"></p>
+		<div class="block2"><ul>
+		<p style="line-height: 1.5;"><b>Пример:</b> задать разный фон ячеек (чтобы разделить две колонки друг от друга) и установить расстояние между колонками (разделитель)</p>	
+		</ul></div>
+		<p><b>Выполнение:</b></p>
+		<p>Добавим новые свойства стилей:</p>
+		<p class="tit-line"></p>
+		фото
+		<p class="tit-line"></p>
+		<p>Все вместе:</p>
+		<p class="tit-line"></p>
+		фото
+		<p class="tit-line"></p>
+		<p>Для разделителя была добавлена новая ячейка.</p>
+		<p><b>Результат:</b></p>
+		фото
+		<p class="tit-line"></p>
+	    <li style="font-size:20px;margin-bottom:8px;">Разделитель между колонками можно также сделать менее выделяющимся. Для этого воспользуемся стилями границ.</li>
+		<div class="block2">
+		<ul>
+		<p style="line-height: 1.5;"><b>Пример:</b> сделать разделитель между колонками таблицы, используя пунктирную линию границы смежных ячеек</p>
+	    </ul>
+		</div>
+		<p><b>Выполнение:</b></p>
+		<p>Добавим новые свойства границ для ячеек:</p>
+		<p class="tit-line"></p>
+		фото
+		<p class="tit-line"></p>
+	    <p>Все вместе:</p>
+		<p class="tit-line"></p>
+		фото
+		<p class="tit-line"></p>
+		<p><b>Результат:</b></p>
+		<p class="tit-line"></p>
+		<br>
+		
+		
+		
+		<p class="tit-line"></p>
+	    <h1 style="font-size: 35px;" id="11_11" class="ogl">Табличная верстка из трех колонок</h1>
+		<p class="tit-line"></p>
+		<p>Существует понятие фиксированного или «резинового» макета верстки.</p>
+		<p class="tit-line"></p>
+		<p><b>Фиксированный макет CSS</b></p>
+		<ul>
+	    <li style="font-size:20px;margin-bottom:8px;"><p style="line-height: 1.5;">При использовании <b>фиксированного макета ширина всей таблицы задается в пикселях</b>, и тогда, независимо от разрешения монитора и окна браузера, таблица будет всегда иметь одинаковую ширину.</p></li>
+        <li style="font-size:20px;margin-bottom:8px;"><p style="line-height: 1.5;">В таком случае <b>ширину остальных колонок стоит также сделать фиксированной</b>.</p></li>
+        <li style="font-size:20px;margin-bottom:8px;"><p style="line-height: 1.5;">Можно не указать ширину одной ячейки, тогда она будет вычислена автоматически, исходя из размеров остальных ячеек и всей таблицы.</p></li>
+		</ul>
+		<p class="tit-line"></p>
+		<div class="block2">
+		<ul>
+		<p style="line-height: 1.5;"><b>Пример:</b> создать шаблон страницы из трех колонок. Использовать фиксированный макет табличной верстки:</p>
+		<p class="tit-line"></p>
+			<ul>
+		<li style="font-size:20px;margin-bottom:8px;">левая колонка — 150 пикселей;</li>
+        <li style="font-size:20px;margin-bottom:8px;">средняя колонка — 400 пикселей;</li>
+        <li style="font-size:20px;margin-bottom:8px;">правая колонка — 200 пикселей;</li>
+			</ul>
+		<p class="tit-line"></p>
+		<p>Задать фон для колонок и визуально разделить колонки границей.</p>
+	    </ul>
+		</div>
+		<p><b>Выполнение:</b></p>
+		<p class="tit-line"></p>
+		фото
+		<p class="tit-line"></p>
+		<p><b>Результат:</b></p>
+		<p class="tit-line"></p>
+		фото
+		<p class="tit-line"></p>
+		<p><b>Резиновый макет</b></p>
+		<p class="tit-line"></p>
+		<li class="square" style="font-size:20px;margin-bottom:8px;line-height: 1.5;"><b>Ширина таблицы</b> при использовании «резинового» дизайна <b>устанавливается в % от ширины окна браузера</b>. Т.о. при изменении окна браузера, изменяются и размеры таблицы.</li>
+        <li class="square" style="font-size:20px;margin-bottom:8px;line-height: 1.5;"><b>Ширина всех ячеек</b> может устанавливаться <b>в процентах</b>.</li> 
+        <li class="square" style="font-size:20px;margin-bottom:8px;line-height: 1.5;">Второй вариант, когда <b>ширина некоторых ячеек</b> устанавливается <b>в процентах</b>, а <b>некоторых</b> — <b>в пикселях</b>.</li>
+        <p class="tit-line"></p>
+		<div class="block3">
+		<ul>
+		<p><b>Важно:</b> Сумма ширины всех колонок должна получиться 100%, независимо от ширины таблицы.</p>	
+		</ul>
+		</div>
+		<p class="tit-line"></p>
+		<div class="block2">
+		<ul>
+		<p style="line-height: 1.5;"><b>Пример:</b> создать шаблон страницы из трех колонок. Использовать резиновый макет табличной верстки:</p>
+		<p class="tit-line"></p>
+			<ul>
+		<li class="square" style="font-size:20px;margin-bottom:8px;line-height: 1.5;">левая колонка — 20%;</li>
+        <li class="square" style="font-size:20px;margin-bottom:8px;line-height: 1.5;">средняя колонка — 40%;</li> 
+        <li class="square" style="font-size:20px;margin-bottom:8px;line-height: 1.5;">правая колонка — 40%;</li>
+			</ul>
+		<p class="tit-line"></p>	
+		<p>Задать фон для колонок и визуально разделить колонки границей.</p>
+		</ul>
+		</div>
+		<p><b>Выполнение:</b></p>
+		<p class="tit-line"></p>
+		фото
+		<p class="tit-line"></p>
+		<p><b>Результат:</b></p>
+		<p class="tit-line"></p>
+		фото
+		<p class="tit-line"></p>
+		<p>Рассмотрим второй вариант, когда ширина центральной колонки автоматически подбирается браузером; примером может служить рисунок:</p>
+		фото
+		<p class="tit-line"></p>
+		<div class="block2">
+		<ul>
+		<p style="line-height: 1.5;"><b>Пример:</b> создать шаблон страницы из трех колонок. Использовать резиновый макет табличной верстки:</p>
+		<p class="tit-line"></p>
+			<ul>
+		<li class="square" style="font-size:20px;margin-bottom:8px;line-height: 1.5;">левая колонка — 150 пикселей;</li>
+        <li class="square" style="font-size:20px;margin-bottom:8px;line-height: 1.5;">средняя колонка — 40%;</li> 
+        <li class="square" style="font-size:20px;margin-bottom:8px;line-height: 1.5;">правая колонка — 200 пикселей;</li>
+			</ul>
+		<p class="tit-line"></p>	
+		<p>Задать фон для колонок и визуально разделить колонки границей.</p>
+		</ul>
+		</div>
+		<p><b>Выполнение:</b></p>
+		<p class="tit-line"></p>
+		фото
+		<p class="tit-line"></p>
+		<p><b>Результат:</b></p>
+		<p>Результат будет примерно такой же, только «растягивание» будет происходит за счет центральной колонки.</p>
+		<p class="tit-line"></p>
+		фото
+		<br>
+		
+		
+	    <h1 style="font-size: 35px;" id="11_12" class="ogl">Использование вложенной таблицы в резиновом макете</h1>
+		<p class="tit-line"></p>
+		<p><b>Если ширина двух колонок устанавливается в процентах, а третьей — в пикселях, обойтись одной таблицей не получится</b>. Так, если ширина всей таблицы равна 100 процентов, первой колонки — 200 пикселей, а оставшихся колонок по 20 процентов, то простое вычисление показывает, что размер первой колонки получается равным 60 процентов. В таком случае заданное значение в пикселях браузером не воспримется, а размер будет установлен в процентах.</p>
+		фото
+		<p class="tit-line"></p>
+		<li class="square" style="font-size:20px;margin-bottom:8px;line-height: 1.5;">Исходная таблица создается с двумя ячейками. Ширина таблицы задается в процентах.</li>
+        <li class="square" style="font-size:20px;margin-bottom:8px;line-height: 1.5;">Для левой ячейки (первой колонки) устанавливается ширина в пикселях.</li>
+        <li class="square" style="font-size:20px;margin-bottom:8px;line-height: 1.5;">Ширина правой ячейки (основа для других колонок) не указывается. Внутрь этой ячейки вставляется вторая таблица, тоже состоящая из двух ячеек.</li>
+        <li class="square" style="font-size:20px;margin-bottom:8px;line-height: 1.5;">У ячеек вложенной таблицы ширина устанавливается в процентах.</li>
+        <li class="square" style="font-size:20px;margin-bottom:8px;line-height: 1.5;">Ширина внутренней таблицы должна быть установлена в 100 процентов, чтобы эта таблица занимала все свободное пространство во внешней таблице.</li>
+        <li class="square" style="font-size:20px;margin-bottom:8px;line-height: 1.5;">Ширина центральной и правой колонки вычисляется относительно ширины ячейки, а не внешней таблицы в целом.</li>
+		<p class="tit-line"></p>
+		<div class="block2">
+		<ul>
+		<p style="line-height: 1.5;"><b>Пример:</b> создать шаблон страницы из трех колонок. Использовать резиновый макет с вложенной таблицей:</p>
+		<p class="tit-line"></p>
+		<ul>
+		<li class="square" style="font-size:20px;margin-bottom:8px;line-height: 1.5;">левая колонка — 150 пикселей;</li>
+        <li class="square" style="font-size:20px;margin-bottom:8px;line-height: 1.5;">средняя колонка — 60%;</li> 
+        <li class="square" style="font-size:20px;margin-bottom:8px;line-height: 1.5;">правая колонка — 40%;</li>
+		<p class="tit-line"></p>
+		
+			</ul>
+		<p>Задать фон для колонок.</p>
+			</ul>
+		</div>
+		<p><b>Выполнение:</b></p>
+		<p class="tit-line"></p>
+		фото
+		<p class="tit-line"></p>
+		<p>Атрибуты тегов <span style="color:#FF0000;"><a style="background: #FFD3D3; border-radius: 5px;">cellpadding</a></span> и <span style="color:#FF0000;"><a style="background: #FFD3D3; border-radius: 5px;">cellspacing</a></span> здесь необходимы, для того, чтобы не было «зазора» между таблицами.</p>
+		<p><b>Результат:</b></p>
+		<p class="tit-line"></p>
+		фото
+		<br>
+		
+<div class="navigation">
+	    <a href="index10.html" class="button">Назад</a>
+	    <a href="index.html" class="button">К оглавлению</a>
+		<a href="index12.html" class="button">Далее</a>
+	    </div>
+	   <hr>
+	    <br>
+	</section>
+</body>
+</html>
+

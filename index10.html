@@ -1,0 +1,196 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Воспоминания</title>
+<link href="style.css" rel="stylesheet">
+</head>
+
+<body>
+	<section>
+		<p class="tit-line"></p>
+		<p class="tit-line"></p>
+		<h1 style="text-align: center; margin:5% 5%; font-size: 40px; padding: 2%">CSS урок 10. Отступ и граница элемента CSS</h1>
+		<p class="tit-line"></p>
+		<div class="block1" style="line-height: 1.5;"><b>Цель урока: </b> Знакомство со свойствами, задающими отступы и границы элемента CSS; свойства margin, padding, border и outline</div>
+		<div class="navigation">
+		<a href="index9.html" class="button">Назад</a>
+		<a href="index.html" class="button">К оглавлению</a>
+		<a href="index11.html" class="button">Далее</a>
+		</div>
+	<hr>
+	
+		<div class="content">
+			<h2>Содержание:</h2>
+			<a href="#10_1">Отступы в CSS</a><br>
+			<a href="#10_2" style="margin-left: 30px">Внешние отступы</a><br>
+			<a href="#10_3" style="margin-left: 30px">Внутренние отступы</a><br>
+			<a href="#10_4">Граница элемента (рамка)</a><br>
+			<a href="#10_5" style="margin-left: 30px">border-style (стиль границы)</a><br>
+			<a href="#10_6" style="margin-left: 30px">border-width (ширина границы)</a><br>
+			<a href="#10_7" style="margin-left: 30px">border-color (цвет границы)</a><br>
+			<a href="#10_8">Внешние границы (outline)</a><br>
+			<a href="#10_9" style="margin-left: 30px">outline-color (цвет)</a><br>
+			<a href="#10_10" style="margin-left: 30px">outline-width (ширина)</a><br>
+			<a href="#10_11" style="margin-left: 30px">outline-style (стиль границы)</a><br>
+			<a href="#10_12">Некоторые приемы с границей</a><br>
+		</div>
+	
+		<br>
+		<h1 id="10_1" class="ogl">Отступы в CSS</h1>
+		<p>Элемент в html — это прямоугольник, для которого можно указать величины внутренних и внешних отступов, а также границу, которая разделяет их.</p><br>
+		<p>Отступы в CSS устанавливаются, например, для блочных элементов и таблиц. Рассмотрим основные свойства CSS для установки отступов:</p>
+		фото
+		
+			
+		<p class="tit-line"></p>
+		<h1 style="font-size: 35px;" id="10_2" class="ogl">Внешние отступы</h1>
+	    <p>Внешние отступы в CSS задаются при помощи свойства <span style="color:#FF0000;"><a style="background: #FFD3D3;border-radius: 5px;">margin<code, которое устанавливает величину отступа от границ текущего элемента до внутренней границы его родительского элемента.</p>
+	    фото
+		<p><b>Свойство:</b></p>
+		<ul>
+		   <li style="font-size:20px;margin-bottom:8px;"><code>block</a></code> ((отображается как блочныcodenone<code (временно удаляет элемент из документcodeinline<code (отображается как встроенный (строчныйcodeinline-block<code (внутренняя часть форматируется как блочный элемент, а сам элемент — как встроенный, обтекается другими элементами (подобно img))</li>
+	    </ul>
+		<p class="tit-line"></p>
+		<p><b>Значение:</b></pcodeauto<code</li>
+		code em</a></spacode%<code</li>
+	    </ul>
+	    <p class="tit-line"></p>
+	    <p><b>Краткая запись:</b></p>
+	    фото
+		<p class="tit-line"></p>
+	   <p><b>Пример:</b></p> 
+		фото
+	    <p><b>Результат:</b></p>
+	    фото
+	
+	
+	   <p class="tit-line"></p>
+		<h1 style="font-size: 35px;" id="10_3" class="ogl">Внутренние отступы</h1>
+	    <p>Внутренние отступы в css создаются при помощи свойства padding, которое устанавливает значение полей от внутреннего края рамки элемента до воображаемого прямоугольника, ограничивающего его содержимое.</p>
+		<p><b>Свойства:</b></p>codepadding-bottom<code (нижний отстуcodepadding-left<code (отступ слевcodepadding-right<code (отступ справcodepadding-top<code (верхний отступ)</li>
+	    </ul>
+		<p class="tit-line"></p>
+		<p><b>Значение:</b></p>codeauto<code</li>
+		code em</a></spacode%<code</li>
+	    </ul>
+	    <p class="tit-line"></p>
+	    <p><b>Краткая запись:</b></p>
+	    фото
+		<p class="tit-line"></p>
+	   <p><b>Пример:</b></p> 
+		фото
+	    <p><b>Результат:</b></p>
+	    фото
+	
+	
+	    <p class="tit-line"></p>
+		<h1 id="10_4" class="ogl">Граница элемента (рамка)</h1>
+	    <p>Грcodeborder<code.</p>
+	    <p class="tit-line"></p>
+
+
+
+        <p class="tit-line"></p>
+		<h1 style="font-size: 35px;" id="10_5" class="ogl">border-style (стиль границы)</h1>
+		<p><b>Значения:</b></p>codenone<code  (без границcodedotted<code (из точеcodedashed<code (пунктирнаcodesolid<code (сплошнаяcodedouble<code (двойнаcodegroove<code (трехмернаcoderidge<code (трехмернаcodeinset<code (трехмерная с теньюcodeoutset<code (трехмерная с тенью)</li>
+		      </ul>
+		<p class="tit-line"></p>
+	   <p><b>Пример:</b></p> 
+		фото
+	    
+
+
+         <p class="tit-line"></p>
+		<h1 style="font-size: 35px;" id="10_6" class="ogl">border-width (ширина границы)</h1>
+		<p><b>Значения:</b></p>codethin<code (тонкаcodemedium<code (средняcodethick<code (толстая)</li>
+		   <li style="font-size:20px;margin-bottom:8px;">значение</li>
+		      </ul>
+		<p class="tit-line"></p>
+	   <p><b>Пример:</b></p> 
+		фото
+	    <p><b>Результат:</b></p>
+	    фото
+
+        <p class="tit-line"></p>
+		<h1 style="font-size: 35px;" id="10_7" class="ogl">border-color (цвет границы)</h1>
+		<p><b>Значения:</b></p>codered<code (цвеcodergb(255,0,0)<code (в системе rgcode#ff0000<code (в шестнадцатиричной системcodetransparent<code (прозрачная)</li>
+		      </ul>
+         <div class="block3">
+         <ul>
+		<p>Для каждой стороны границы можно задать свой стиль:</p>	 
+	    фото
+	   <p><b>Результат:</b></p>
+	   фото
+	    </ul>
+        </div>
+         <p class="tit-line"></p>
+	    <p><b>Краткая запись:</b></p>
+	    фото
+		
+       
+	    <p class="tit-line"></p>
+		<h1 id="10_8" class="ogl">Внешние границы (outline)</h1>
+codeoutline<code, одновременно устанавливающее цвет, стиль и толщину внешней границы на всех четырехcodeoutline<code не влияет на положение блока и его ширину.</p>
+	    <p class="tit-line"></p>
+
+
+        <p class="tit-line"></p>
+		<h1 style="font-size: 35px;" id="10_9" class="ogl">outline-color (цвет)</h1>
+		<p><b>Значения:</b></p>codered<code (цвеcodergb(255,0,0)<code (в системе rgcode#ff0000<code (в шестнадцатеричной системcodeinvert<code (инвертированный, противоположный)</li>
+		      </ul>
+
+
+
+		<p class="tit-line"></p>
+		<h1 style="font-size: 35px;" id="10_10" class="ogl">outline-width (ширина)</h1>
+		<p><b>Значения:</b></pcodethin<code (тонкаcodemedium<code (средняcodethick<code (толстая)</li>
+		   <li style="font-size:20px;margin-bottom:8px;">значение</li>
+		      </ul>
+          
+
+        
+		<p class="tit-line"></p>
+		<h1 style="font-size: 35px;" id="10_11" class="ogl">outline-width (ширина)</h1>
+		<p><b>Значения:</b></p>codenone<code  (без границcodedotted<code (из точеcodedashed<code (пунктирнаcodesolid<code (сплошнаяcodedouble<code (двойнаcodegroove<code (трехмернаcoderidge<code (трехмернаcodeinset<code (трехмерная с теньюcodeoutset<code (трехмерная с тенью)</li>
+		  </ul>
+           <p class="tit-line"></p>
+	    <p><b>Краткая запись:</b></p>
+	    фото
+		
+        
+        <p class="tit-line"></p>
+		<h1 id="10_12" class="ogl">Некоторые приемы с границей</h1>
+	    <p><b>Рамка вокруг изображения</b></p>
+	   <p class="tit-line"></p>
+	   <p><b>Пример:</b></p> 
+		фото
+	    <p><b>Результат:</b></p>
+	    фото
+        <p><b>Двойная рамка с использованием CSS</b></p>
+       <p class="tit-line"></p>
+	   <p><b>Пример:</b></p> 
+		фото
+	    <p><b>Результат:</b></p>
+	    фото
+        <p><b>Эффектные рамки для изображений</b></p>
+         <p class="tit-line"></p>
+	   <p><b>Пример:</b></p> 
+		фото
+	    <p><b>Результат:</b></p>
+	    фото
+
+		
+		
+		
+		
+<div class="navigation">
+	    <a href="index9.html" class="button">Назад</a>
+	    <a href="index.html" class="button">К оглавлению</a>
+		<a href="index11.html" class="button">Далее</a>
+	    </div>
+	   <hr>
+	    <br>
+	</section>
+</body>
+</html>

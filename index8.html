@@ -1,0 +1,161 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Воспоминания</title>
+<link href="style.css" rel="stylesheet">
+</head>
+
+<body>
+	<section>
+		<p class="tit-line"></p>
+		<p class="tit-line"></p>
+		<h1 style="text-align: center; margin:5% 5%; font-size: 40px; padding: 2%">CSS урок 8. Свойства фона</h1>
+		<p class="tit-line"></p>
+		<div class="block1" style="line-height: 1.5;"><b>Цель урока: </b> Знакомство со свойствами фона css и приобретение навыков работы с ними</div>
+		<div class="navigation">
+		<a href="index7.html" class="button">Назад</a>
+		<a href="index.html" class="button">К оглавлению</a>
+		<a href="index9.html" class="button">Далее</a>
+		</div>
+	<hr>
+	
+		<div class="content">
+			<h2>Содержание:</h2>
+			<a href="#8_1">Свойства фона css</a><br>
+			<a href="#8_2" style="margin-left: 30px">background-color (цвет фона)</a><br>
+			<a href="#8_3" style="margin-left: 30px">background-image (фоновое изображение)</a><br>
+			<a href="#8_4" style="margin-left: 30px">background-repeat (повторение фона)</a><br>
+			<a href="#8_5" style="margin-left: 30px">background-position (позиционирование фона)</a><br>
+			<a href="#8_6" style="margin-left: 30px">background-attachment (прокрутка фона)</a><br>
+			<a href="#8_7">Краткая запись background</a><br>					
+		</div>
+	
+		<br>
+		<h1 id="8_1" class="ogl">Свойства фона CSS</h1>
+		<p class="tit-line"></p>
+		<p>Перечислим основные свойства для стилизации фона и их значения</p>
+			
+			
+		<p class="tit-line"></p>
+		<h1 id="8_2" class="ogl"><span style="color:#B4586D;">BACKGROUND-COLOR (ЦВЕТ ФОНА)</span></h1>
+		<p><b>Возможные значения:</b></p>
+		<p class="tit-line"></p>
+		<ul>
+		   <li style="font-size:20px;margin-bottom:8px;"><span style="color:#FF0000;"><a style="background: #FFD3D3;border-radius: 5px;">red</a></span> (название)</li>
+		   <li style="font-size:20px;margin-bottom:8px;"><span style="color:#FF0000;"><a style="background: #FFD3D3;border-radius: 5px;">rgb(255,0,0)</a></span> (код RGB)</li>
+		   <li style="font-size:20px;margin-bottom:8px;"><span style="color:#FF0000;"><a style="background: #FFD3D3;border-radius: 5px;">#ff0000</a></span> (шестнадцатиричный код)</li>
+			<li style="font-size:20px;margin-bottom:8px;"><span style="color:#FF0000;"><a style="background: #FFD3D3;border-radius: 5px;">transparent</a></span> (прозрачность)</li>
+	    </ul>
+		<p class="tit-line"></p>
+		<p><b>Пример:</b></p>
+		<p class="tit-line"></p>
+		фото
+	    <p><b>Результат:</b></p>
+	    фото
+
+	
+        <p class="tit-line"></p>
+	    <h1 id="8_3" class="ogl"><span style="color:#B4586D;">BACKGROUND-IMAGE (ФОНОВОЕ ИЗБРАЖЕНИЕ)</span></h1>
+		<p><b>Возможные значения:</b></p>
+		<p class="tit-line"></p>
+	  <ul>
+          <li style="font-size:20px;margin-bottom:8px;"><span style="color:#FF0000;"><a style="background: #FFD3D3; border-radius: 5px;">url('...')</a></span> (url-адрес)</li>
+		  <li style="font-size:20px;margin-bottom:8px;"><span style="color:#FF0000;"><a style="background: #FFD3D3; border-radius: 5px;">none</a></span> (без фонового изображения)</li>
+      </ul>
+		 <p class="tit-line"></p>
+		<p>Изображение тиражируется по всему экрану.</p>
+		<p class="tit-line"></p>
+		  <p><b>Пример:</b></p>
+		  фото
+		  <p><b>Результат:</b></p>
+	      фото
+		
+		
+		  <p class="tit-line"></p>
+	      <h1 id="8_4" class="ogl"><span style="color:#B4586D;">BACKGROUND-REPEAT (ПОВТОРЕНИЕ ФОНА)</span></h1>
+		  <p><b>Возможные значения:</b></p>
+		<p class="tit-line"></p>
+	 <ul>
+          <li style="font-size:20px;margin-bottom:8px;"><span style="color:#FF0000;"><a style="background: #FFD3D3; border-radius: 5px;">repeat-x</a></span> (Фоновый рисунок повторяется только по горизонтали)</li>
+		  <li style="font-size:20px;margin-bottom:8px;"><span style="color:#FF0000;"><a style="background: #FFD3D3; border-radius: 5px;">repeat-y</a></span> (Фоновый рисунок повторяется только по вертикали)</li>
+		  <li style="font-size:20px;margin-bottom:8px;"><span style="color:#FF0000;"><a style="background: #FFD3D3; border-radius: 5px;">no-repeat</a></span> (изображение без повторений)</li>
+	 </ul>
+		<p class="tit-line"></p>
+		  <p><b>Пример:</b></p>
+		<p class="tit-line"></p>
+	      фото
+		  <p><b>Результат:</b></p>
+	      фото
+		
+		
+		  <p class="tit-line"></p>
+	      <h1 id="8_5" class="ogl"><span style="color:#B4586D;">BACKGROUND-POSITION (ПОЗИЦИОНИРОВАНИЕ ФОНА)</span></h1>
+		  <p><b>Возможные значения:</b></p>
+		  <p class="tit-line"></p>
+		  <ul>
+          <li style="font-size:20px;margin-bottom:8px;"><span style="color:#FF0000;"><a style="background: #FFD3D3; border-radius: 5px;">xpos ypos</a></span> (координаты)</li>
+		  <li style="font-size:20px;margin-bottom:8px;"><span style="color:#FF0000;"><a style="background: #FFD3D3; border-radius: 5px;">left top</a></span> (по левому и верхнему краю)</li>
+		  <li style="font-size:20px;margin-bottom:8px;"><span style="color:#FF0000;"><a style="background: #FFD3D3; border-radius: 5px;">left center</a></span> (слева и по центру)</li>
+		  <li style="font-size:20px;margin-bottom:8px;"><span style="color:#FF0000;"><a style="background: #FFD3D3; border-radius: 5px;">left bottom</a></span> (слева и по нижнему краю)</li>
+		  <li style="font-size:20px;margin-bottom:8px;"><span style="color:#FF0000;"><a style="background: #FFD3D3; border-radius: 5px;">right top</a></span> (справа и по верхнему краю)</li>
+		  <li style="font-size:20px;margin-bottom:8px;"><span style="color:#FF0000;"><a style="background: #FFD3D3; border-radius: 5px;">right center</a></span> (справа и по центру)</li>
+		  <li style="font-size:20px;margin-bottom:8px;"><span style="color:#FF0000;"><a style="background: #FFD3D3; border-radius: 5px;">right bottom</a></span> (справа и по нижнему краю)</li>
+		  <li style="font-size:20px;margin-bottom:8px;"><span style="color:#FF0000;"><a style="background: #FFD3D3; border-radius: 5px;">center top</a></span> (центр по горизонтали и верхний край)</li>
+		  <li style="font-size:20px;margin-bottom:8px;"><span style="color:#FF0000;"><a style="background: #FFD3D3; border-radius: 5px;">center center</a></span> (центр по горизонтали и по вертикали)</li>
+		  <li style="font-size:20px;margin-bottom:8px;"><span style="color:#FF0000;"><a style="background: #FFD3D3; border-radius: 5px;">center bottom</a></span> (центр по горизонтали и нижний край)</li>
+      </ul>
+		<p class="tit-line"></p>
+		  <p><b>Пример:</b></p>
+		<p class="tit-line"></p>
+	     фото
+          <p><b>Результат:</b></p>
+		  фото
+		
+		
+		<p class="tit-line"></p>
+	      <h1 id="8_6" class="ogl"><span style="color:#B4586D;">BACKGROUND-ATTACHMENT (ПРОКРУТКА ФОНА)</span></h1>
+         <p><b>Возможные значения:</b></p>
+		<p class="tit-line"></p>
+		  <ul>
+          <li style="font-size:20px;margin-bottom:8px;"><span style="color:#FF0000;"><a style="background: #FFD3D3; border-radius: 5px;">scroll </a></span> (прокрутка вместе с содержимым)</li>
+		  <li style="font-size:20px;margin-bottom:8px;"><span style="color:#FF0000;"><a style="background: #FFD3D3; border-radius: 5px;">fixed</a></span> (делает изображение неподвижным)</li>
+	  </ul>
+		<p class="tit-line"></p>
+	  <p><b>Пример:</b></p>
+		<p class="tit-line"></p>
+	      фото
+		 <p><b>Результат:</b></p>
+	      фото
+		
+		
+		<p class="tit-line"></p>
+      <h1 id="8_7" class="ogl"><span style="color:#B4586D;">Краткая запись background</span></h1>
+		<p class="tit-line"></p>
+         <p>Свойства фона задаются в следующем порядке:</p>
+		<p class="tit-line"></p>
+		 фото
+		<p class="tit-line"></p>
+		  <p><b>Пример:</b></p>
+		<p class="tit-line"></p>
+	      фото
+		<p class="tit-line"></p>
+		<div class="block1">
+			<ul>
+		<p><b>Задание:</b> Скачайте файл. Расположите файл-картинку на задний фон страницы, чтобы добиться эффекта как на итоговом изображении:
+			  <img src="image/2026-05-07_17-47-28.png" alt=""/></p>
+          </ul>
+		</div>
+		
+		<br>
+		
+<div class="navigation">
+	    <a href="index7.html" class="button">Назад</a>
+	    <a href="index.html" class="button">К оглавлению</a>
+		<a href="index9.html" class="button">Далее</a>
+	    </div>
+	   <hr>
+	    <br>
+	</section>
+</body>
+</html>

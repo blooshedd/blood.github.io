@@ -1,0 +1,200 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Воспоминания</title>
+<link href="style.css" rel="stylesheet">
+</head>
+
+<body>
+	<section>
+		<p class="tit-line"></p>
+		<p class="tit-line"></p>
+		<h1 style="text-align: center; margin:5% 5%; font-size: 40px; padding: 2%">CSS урок 13. Другие свойства блоков CSS и блочная верстка сайта</h1>
+		<p class="tit-line"></p>
+		<div class="block1"><b>Цель урока: </b> Знакомство со свойствами блоков float, clear, margin-left, margin-right, max-width и max-height. с принципами табличной верстки CSS. Получение навыков использования блочной верстки сайта css</div>
+		<div class="navigation">
+		<a href="index9.html" class="button">Назад</a>
+		<a href="index.html" class="button">К оглавлению</a>
+		<a href="index11.html" class="button">Далее</a>
+		</div>
+	<hr>
+	
+		<div class="content">
+			<h2>Содержание:</h2>
+			<a href="#13_1">Свойства блоков width, max-width, height, max-height</a><br>
+			<a href="#13_2" style="margin-left: 30px">width</a><br>
+			<a href="#13_3" style="margin-left: 30px">max-width</a><br>
+			<a href="#13_4" style="margin-left: 30px">height</a><br>
+			<a href="#13_5" style="margin-left: 30px">max-height</a><br>
+			<a href="#13_6" style="margin-left: 30px">float</a><br>
+			<a href="#13_7" style="margin-left: 30px">clear</a><br>
+			<a href="#13_8" style="margin-left: 30px">margin-left и margin-right</a><br>
+		</div>
+	
+		
+		
+		<p class="tit-line"></p>
+		<h1 id="13_1" class="ogl">Свойства блоков width, max-width, height, max-height</h1>
+        <p class="tit-line"></p>
+		
+			
+		
+		<p class="tit-line"></p>
+		<h1 id="13_2" class="ogl"><span style="color:#B4586D;">WIDTH</span></h1>
+		<p class="tit-line"></p>
+		<p>ширина блока</p>
+		
+		
+		
+		<p class="tit-line"></p>
+		<h1 id="13_3" class="ogl"><span style="color:#B4586D;">MAX-WIDTH</span></h1>
+		
+		
+		
+		<p class="tit-line"></p>
+		<h1 id="13_4" class="ogl"><span style="color:#B4586D;">HEIGHT</span></h1>
+		<p class="tit-line"></p>
+		<p>высота блока</p>
+		
+		
+		
+		<p class="tit-line"></p>
+		<h1 id="13_5" class="ogl"><span style="color:#B4586D;">MAX-HEIGHT</span></h1>
+		<p class="tit-line"></p>
+		<p class="tit-line"></p>
+		
+		
+		
+		<p>Возможные значения для всех свойств:</p>
+		<p class="tit-line"></p>
+		<div class="square">
+		   <li style="font-size:20px;margin-bottom:8px;"><span style="color:#FF0000;"><a style="border-radius: 5px;">auto</a></span></li>
+		   <li style="font-size:20px;margin-bottom:8px;">величина в пикселях</li>
+		   <li style="font-size:20px;margin-bottom:8px;"><span style="color:#FF0000;"><a style="border-radius: 5px;">%</a></span></li>
+	    </div>
+		<p class="tit-line"></p>
+		<p><b>Пример:</b></p> 
+		<p class="tit-line"></p>
+		фото
+		<p class="tit-line"></p>
+		<p><b>Результат:</b></p>
+		<p class="tit-line"></p>
+		фото
+		<p class="tit-line"></p>
+		
+		
+		
+		<h1 id="13_6" class="ogl"><span style="color:#B4586D;">FLOAT</span></h1>
+		<p class="tit-line"></p>
+		<p><b>блочность или обтекание</b></p>
+		<p class="tit-line"></p>
+		<p>В обычном состоянии элемент <span style="color:#FF0000;"><a style="border-radius: 5px;">div</a></span> — блочный:</p>
+		фото
+		<p class="tit-line"></p>
+		<p>При использовании <span style="color:#FF0000;"><a style="border-radius: 5px;">float</a></span> элемент теряет блочность и выравнивается согласно значению:</p>
+		фото
+		<p class="tit-line"></p>
+		<p>При этом следует иметь в виду, что если блок, следующий дальше, не имеет установленного свойства <span style="color:#FF0000;"><a style="border-radius: 5px;">float</a></span>, то сам блок поместится за блок со значением свойства <span style="color:#FF0000;"><a style="border-radius: 5px;">float:left</a></span>. А содержимое блока (текст) будет обтекать блок со значением свойства <span style="color:#FF0000;"><a style="border-radius: 5px;">float:left</a></span>:</p>
+		<p class="tit-line"></p>
+		фото
+		<p class="tit-line"></p>
+		<p>Возможные значения float:</p>
+		<p class="tit-line"></p>
+		<div class="square">
+		<li style="font-size:20px;margin-bottom:8px;line-height: 1.5;"><span style="color:#FF0000;"><a style="border-radius: 5px;">left</a></span><br>
+        элемент выравнивается по левому краю, давая остальным элементам обтекать его справа</li>
+			<br>
+        <li style="font-size:20px;margin-bottom:8px;line-height: 1.5;"><span style="color:#FF0000;"><a style="border-radius: 5px;">right</a></span><br>
+        элемент выравнивается по правому краю, давая остальным элементам обтекать его слева</li>
+			<br>
+        <li style="font-size:20px;margin-bottom:8px;line-height: 1.5;"><span style="color:#FF0000;"><a style="border-radius: 5px;">none</a></span><br>
+        обтекание не задается (значение по умолчанию)</li>
+			<br>
+        <li style="font-size:20px;margin-bottom:8px;line-height: 1.5;"><span style="color:#FF0000;"><a style="border-radius: 5px;">inherit</a></span><br>
+        значение наследуется от родителя</li>
+		</div>
+	    <p class="tit-line"></p>
+	    <p><b>Пример:</b></p> 
+		<p class="tit-line"></p>
+		фото
+		<p class="tit-line"></p>
+		<p><b>Результат:</b></p>
+		<p class="tit-line"></p>
+		фото
+		<p class="tit-line"></p>
+		
+
+		
+		
+		<h1 id="13_7" class="ogl"><span style="color:#B4586D;">CLEAR</span></h1>
+		<p class="tit-line"></p>
+		<p><b>отмена обтекания</b></p>
+		фото
+		<p class="tit-line"></p>
+		<p><b>Возможные значения:</b></p>
+		<p class="tit-line"></p>
+		<div class="square">
+		<li style="font-size:20px;margin-bottom:8px;line-height: 1.5;"><span style="color:#FF0000;"><a style="border-radius: 5px;">left</a></span><br>
+       отмена обтекания элемента слева</li>
+			<br>
+        <li style="font-size:20px;margin-bottom:8px;line-height: 1.5;"><span style="color:#FF0000;"><a style="border-radius: 5px;">right</a></span><br>
+       отмена обтекания элемента справа</li>
+			<br>
+	    <li style="font-size:20px;margin-bottom:8px;line-height: 1.5;"><span style="color:#FF0000;"><a style="border-radius: 5px;">both</a></span><br>
+			отмена обтекания элемента и справа и слева</li>
+			<br>
+        <li style="font-size:20px;margin-bottom:8px;line-height: 1.5;"><span style="color:#FF0000;"><a style="border-radius: 5px;">none</a></span><br>
+       нет отмены обтекания (значение по умолчанию)</li>
+			<br>
+        <li style="font-size:20px;margin-bottom:8px;line-height: 1.5;"><span style="color:#FF0000;"><a style="border-radius: 5px;">inherit</a></span><br>
+        значение наследуется от родителя</li>
+		</div>
+	    <p class="tit-line"></p>
+	    <p><b>Пример:</b></p> 
+		<p class="tit-line"></p>
+		фото
+		<p class="tit-line"></p>
+		<p><b>Результат:</b></p>
+		<p class="tit-line"></p>
+		фото
+		<p class="tit-line"></p>
+		
+		
+		
+		
+		<h1 id="13_8" class="ogl"><span style="color:#B4586D;">MARGIN LEFT И MARGIN RIGHT</span></h1>
+		<p class="tit-line"></p>
+		<p><b>или выравнивание блока по центру</b></p>
+		<li style="font-size:20px;margin-bottom:8px;line-height: 1.5;">Значение <span style="color:#FF0000;"><a style="border-radius: 5px;">auto</a></span> для свойств <span style="color:#FF0000;"><a style="border-radius: 5px;">margin-left</a></span> и <span style="color:#FF0000;"><a style="border-radius: 5px;">margin-right</a></span> <b>выравнивает блок по центру</b> в своем контейнере (или браузере). При этом у элемента <b>должна быть задана ширина</b>.</li>
+		<p><b>Пример:</b></p> 
+		<p class="tit-line"></p>
+		фото
+		<p class="tit-line"></p>
+		<p><b>Результат:</b></p>
+		<p class="tit-line"></p>
+		фото
+		<p class="tit-line"></p>
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+<div class="navigation">
+	    <a href="index9.html" class="button">Назад</a>
+	    <a href="index.html" class="button">К оглавлению</a>
+		<a href="index11.html" class="button">Далее</a>
+	    </div>
+	   <hr>
+	    <br>
+	</section>
+</body>
+</html>

@@ -1,0 +1,207 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Воспоминания</title>
+<link href="style.css" rel="stylesheet">
+</head>
+
+<body>
+	<section>
+		<p class="tit-line"></p>
+		<p class="tit-line"></p>
+		<h1 style="text-align: center; margin:5% 5s%; font-size: 40px; padding: 2%">CSS урок 2. Использование классов</h1>
+		<p class="tit-line"></p>
+		<p class="tit-line"></p>
+		<div class="block1" style="line-height: 1.5;">Цель урока: знакомство с понятием класса в css. Рассмотрены примеры использования классов</div>
+		<div class="navigation">
+		<a href="index1.html" class="button">Назад</a>
+		<a href="index.html" class="button">К оглавлению</a>
+		<a href="index3.html" class="button">Далее</a>
+		</div>
+	    <hr>
+		
+		<div class="content">
+			<h2>Содержание:</h2>
+			<a href="#2_1">Создание и использование классов CSS</a><br>
+			<a href="#2_2">Универсальные классы или CSS селектор ID</a><br>
+			<a href="#2_3">Каскадирование css стилей</a><br>
+			<a href="#2_4">CSS наследование стилей</a><br>
+		</div>
+		
+		
+	    <br>
+			<h1 id="2_1" class="ogl">Создание и использование классов CSS</h1>
+			<p style="line-height: 1.5;">Для выделения какой-то группы объектов (элементов), которые необходимо наделить одними и теми же свойствами css, необходимо создать класс.</p>
+			<p><b>Синтаксис:</b></p>
+		        <img src="image/2026-04-30_08-31-14.png" width="931" height="102" alt=""/>
+            <p><b>Подробнее:</b></p>
+		    <p style="font-size:22px; margin-left: 40px;">Чтобы добавить класс, необходимо:</p>
+			<p class="tit-line"></p>
+		    <ul>
+		    <p style="font-size:22px; font-weight: bold">1.</p>
+		    <p class="font-size:22px; margin-left: 40px;" style="line-height: 1.5;">Для элементов (тегов) к которым будут применены свойства класса, нужно <b>прописать атрибут</b> <code style="background: #FFD3D3; border-radius: 5px;">class</code> с придуманным названием класса в качестве значения атрибута:</p>
+			<p class="tit-line"></p>
+               <img src="image/2026-04-30_08-32-26.png" width="902" height="46" alt=""/>
+            <p style="font-size:22px; font-weight: bold">2.</p>
+		    <p class="font-size:22px; margin-left: 40px;" style="line-height: 1.5;">В отельном стилевом файле (<i>style.css</i>) или в области <code style="background: #FFD3D3; border-radius: 5px;">head</code> текущего документа <b>прописать свойства созданного класса</b></p>
+			<br>
+		    <div class="block1">
+			<ul>	
+			<p style="line-height: 1.5;">Идентификатор класса всегда начинается с точки (.)</p>
+			</ul>
+			</div>
+                <img src="image/2026-04-30_08-33-19.png" width="886" height="86" alt=""/>
+            <p class="font-size:22px; margin-left: 40px;" style="line-height: 1.5;">В данном примере класс <code style="background: #FFD3D3; border-radius: 5px;">my_class</code> будет «привязан» именно к тегу <code style="background: #FFD3D3; border-radius: 5px;">h1</code>, т.е. для других тегов с аналогичным классом свойства работать не будут.</p>
+			<p class="tit-line"></p>
+		    <p class="font-size:22px; margin-left: 40px;">Можно написать <b>без привязки к конкретному тегу</b>:</p>
+               <img src="image/2026-04-30_08-34-40.png" width="903" height="92" alt=""/>
+            <p class="font-size:22px; margin-left: 40px;">В данном случае класс будет применен к любым тегом данного класса</p></ul>
+	    	<p class="tit-line"></p>
+		    <div class="block2">
+			<ul>
+			<p style="line-height: 1.5;"><b>Пример:</b> Создать два класса с названиями <code style="background: #FFD3D3; border-radius: 5px;">red1</code> и <code style="background: #FFD3D3; border-radius: 5px;">class1</code>. Один класс применить для заголовков <code style="background: #FFD3D3; border-radius: 5px;">h1</code>, другой класс применить для тегов <code style="background: #FFD3D3; border-radius: 5px;">p</code></p>
+			</ul>
+		    </div>
+		    <p><b>Выполнение:</b></p>
+            <img src="image/2026-04-30_08-35-38.png" width="959" height="334" alt=""/>
+			<p class="tit-line"></p>
+            <p><b>Результат:</b></p>
+              <img src="image/2026-04-30_08-36-26.png" width="941" height="309" alt=""/> 
+			<p class="tit-line"></p>
+		    <div class="block3"><ul><p style="line-height: 1.5;"><b>Задание:</b> скопируйте код страницы. Измените страницу меню сайта так, чтобы одни пункты меню были темного цвета (класс <span style="color:#FF0000;"><a style="background: #FFD3D3; border-radius: 5px;">.dark</a></span>), а другие – светлого ( класс <span style="color:#FF0000;"><a style="background: #FFD3D3; border-radius: 5px;">.light</a></span>).<br>
+            Для гиперссылки добавить свойство: <span style="color:#FF0000;"><a style="background: #FFD3D3; border-radius: 5px;">text-decoration:none;</a></span></p>
+				<p class="tit-line"></p>
+	          <img src="image/2026-04-30_23-13-50.png" width="835" height="577" alt="">
+		   </ul>
+		   </div>
+           <p style="font-size:22px;"><b>Примеры использования классов с тегами и просто классов:</b></p>
+               <img src="image/2026-04-30_08-38-45.png" width="947" height="444" alt=""/>
+		   <p class="tit-line"></p>
+		   <p class="tit-line"></p>
+		 
+		
+		
+		  
+           <h1 id="2_2" class="ogl">Универсальные классы или CSS селектор ID</h1>
+		   <p style="line-height: 1.5;">Универсальные классы необходимы для того, чтобы оформить определенным стилем один единственный элемент на странице (на разных страницах сайта).</p>
+		   <p><b>Синтакис:</b></p>
+		   <br>
+	          <img src="image/2026-04-30_08-41-13.png" width="944" height="93" alt=""/>
+           <p><b>Подробнее:</b></p>
+		   <ul>
+		   <p style="font-size:22px; font-weight: bold">1.</p>
+		   <p class="font-size:22px; margin-left: 40px;" style="line-height: 1.5;">Необходимо <b>задать атрибут</b> <span style="color:#FF0000;"><a style="background: #FFD3D3; border-radius: 5px;"><b>id</b></a></span> <b>с уникальным значением</b> для того элемента, к которому будет применен универсальный класс:</p>
+	         <img src="image/2026-04-30_08-42-27.png" width="893" height="33" alt=""/>
+           <p class="font-size:22px; margin-left: 40px;" style="line-height: 1.5;">Значение атрибута <span style="color:#FF0000;"><a style="background: #FFD3D3; border-radius: 5px;">id</a></span> придумывается самостоятельно и должно быть единственным таким значением <span style="color:#FF0000;"><a style="background: #FFD3D3; border-radius: 5px;">id</a></span> на всей веб-странице.</p>
+		   <p style="font-size:22px;font-weight: bold">2.</p>
+		   <p class="font-size:22px; margin-left: 40px;">В стилевом файле (<b>style.css</b>) либо в области <span style="color:#FF0000;"><a style="background: #FFD3D3; border-radius: 5px;">head</a></span> текущей веб-страницы <b>задается стиль для селектора</b> <span style="color:#FF0000;"><a style="background: #FFD3D3; border-radius: 5px;"><b>id</b></a></span>:</p>
+	          <img src="image/2026-04-30_08-44-02.png" width="883" height="123" alt=""/>
+		   <div class="block1">
+		   <ul>   
+		   <p style="line-height: 1.5;">В стилях опознавательным знаком для универсального селектора является символ <span style="color:#FF0000;"><a style="background: #FFD3D3; border-radius: 5px;">#</a></span></p>
+		   </ul>
+		   </div>
+		   </ul>
+	       <div class="block2">
+		   <ul>	 
+		   <p style="line-height: 1.5;">
+		   <b>Пример:</b> для первого заголовка h2 создать универсальный стиль, оформив его каким-либо цветом и увеличив жирность шрифта</p>
+		   </ul>
+		   </div>
+           <p><b>Выполнение:</b></p>
+	          <img src="image/2026-04-30_08-47-48.png" width="949" height="261" alt=""/>
+           <p><b>Результат:</b></p>
+	          <img src="image/2026-04-30_08-48-35.png" width="936" height="183" alt=""/>
+           <p>Стиль универсального селектора также может быть определен <b>для конкретного тега:</b></p>
+	          <img src="image/2026-04-30_08-51-03.png" width="933" height="82" alt=""/>
+           <p style="line-height: 1.5;">В таком случае стиль будет влиять только на селекторы <span style="color:#FF0000;"><a style="background: #FFD3D3; border-radius: 5px;">h2</a></span>, другие теги с атрибутом <span style="color:#FF0000;"><a style="background: #FFD3D3; border-radius: 5px;">id="steel"</a></span> оформлены стилем не будут.</p>
+	       <p class="tit-line"></p>
+           <div class="block1">
+	       <ul>
+		   <p style="line-height: 1.5;"><b>Задание:</b> Задайте уникальный стиль для главного заголовка сайта. Опишите стиль в отдельном файле <b>style.css</b> и подключите стилевой файл к странице. В качестве свойств созданного стиля желательно использовать следующие:</p>
+		   <br>
+	       <p style="color:rgb(144,0,32)"><b><a href="index6.html#align" style="color:#900020;text-decoration:none;" onmouseover="this.style.color='#fff3dd';this.style.borderBottomColor='#fff3dd'" onmouseout="this.style.color='#900020';this.style.borderBottomColor='#900020'">Выравнивание текста:</a></b></p>
+		   <p class="tit-line"></p>
+              <img src="image/2026-04-30_08-55-54.png" width="817" height="46" alt=""/>
+		   <p class="tit-line"></p>
+           <p style="color:rgb(144,0,32)"><b><a href="index6.html#decor" style="color:#900020;text-decoration:none;" onmouseover="this.style.color='#FDC728';this.style.borderBottomColor='#FDC728'" onmouseout="this.style.color='#900020';this.style.borderBottomColor='#900020'">Оформление текста:</a></b></p>
+		   <p class="tit-line"></p>
+               <img src="image/2026-04-30_08-56-45.png" width="819" height="49" alt=""/>
+	 	   <p class="tit-line"></p>
+	            <img src="image/2026-04-30_08-53-12.png" width="296" height="71" alt=""/>
+		   <p class="tit-line"></p>
+           <p style="color:rgb(144,0,32)"><b><a href="index6.html#trans" style="color:#900020;text-decoration:none;" onmouseover="this.style.color='#fff3dd';this.style.borderBottomColor='#fff3dd'" onmouseout="this.style.color='#900020';this.style.borderBottomColor='#900020'">Преобразование текста:</a></b></p>
+		   <p class="tit-line"></p>
+               <img src="image/2026-04-30_09-04-34.png" width="816" height="48" alt=""/>
+		   <p class="tit-line"></p>
+	           <img src="image/2026-04-30_09-05-16.png" width="302" height="66" alt=""/>
+		   <p class="tit-line"></p>
+           <p style="color:rgb(144,0,32)"><b><a href="index7.html#sty" style="color:#900020;text-decoration:none;" onmouseover="this.style.color='#fff3dd';this.style.borderBottomColor='#fff3dd'" onmouseout="this.style.color='#900020';this.style.borderBottomColor='#900020'">Стиль шрифта:</a></b></p>
+	       <p class="tit-line"></p>
+	           <img src="image/2026-04-30_09-05-58.png" width="816" height="48" alt=""/>
+		   <p class="tit-line"></p>
+	            <img src="image/2026-04-30_09-07-01.png" width="294" height="54" alt=""/>
+		   <p class="tit-line"></p>
+           <p style="color:rgb(144,0,32)"><b><a href="index7.html#siz" style="color:#900020;text-decoration:none;" onmouseover="this.style.color='#fff3dd';this.style.borderBottomColor='#fff3dd'" onmouseout="this.style.color='#900020';this.style.borderBottomColor='#900020'">Размер шрифта:</a></b></p>
+		   <p class="tit-line"></p>
+               <img src="image/2026-04-30_09-10-53.png" width="817" height="48" alt=""/>
+		   <p class="tit-line"></p>
+	           <img src="image/2026-04-30_09-11-34.png" width="306" height="49" alt=""/> 
+		   </ul>
+	       </div>
+	       <p class="tit-line"></p>
+		   <p class="tit-line"></p>
+	
+	
+	
+	       
+           <h1 id="2_3" class="ogl">Каскадирование css стилей</h1>
+	       <p style="line-height: 1.5;">Каскадирование css стилей означает <b>преемственность применения того или иного стиля в зависимости от используемого метода подключения css. </b>Рассмотрим на примере:</p>
+              <img src="image/2026-04-30_09-15-17.png" width="938" height="367" alt=""/>
+	       <p class="tit-line"></p>
+           <p style="line-height: 1.5;">На примере видно, что приоритетным является 
+	       <a href="index1.html#inline" style="color:#900020;text-decoration:none;" onmouseover="this.style.color='#fff3dd';this.style.borderBottomColor='#fff3dd'" onmouseout="this.style.color='#900020';this.style.borderBottomColor='#900020'"><b>метод встраивания</b></a> использования стилей. Следующим по приоритету следует <a href="index1.html#embed" style="color:#900020;text-decoration:none;" onmouseover="this.style.color='#fff3dd';this.style.borderBottomColor='#fff3dd'" onmouseout="this.style.color='#900020';this.style.borderBottomColor='#900020'"><b>метод вложения</b></a> и только потом — <a href="index1.html#linking" style="color:#900020;text-decoration:none;" onmouseover="this.style.color='#fff3dd';this.style.borderBottomColor='#fff3dd'" onmouseout="this.style.color='#900020';this.style.borderBottomColor='#900020'"><b>метод связывания</b></a> (стиль в отдельном файле)</p>
+	       <p class="tit-line"></p>
+	       <div class="block1">
+		   <ul>
+		   <p style="line-height: 1.5;"><b>Важно:</b> В случае, если пользовательская таблица стилей содержит <span style="color:#FF0000;"><a style="background: #FFD3D3; border-radius: 5px;">!important</a></span>, то это правило имеет приоритет над любым правилом, описанным в таблице стилей:</p>
+		   <p class="tit-line"></p>
+	        <img src="image/2026-04-30_23-37-41.png" width="840" height="25" alt=""/>
+		   </ul>
+		   </div>
+	       <p class="tit-line"></p>
+	       <div class="block2">
+		   <ul>	   
+		   <p style="line-height: 1.5;"><b>Пример:</b> создать правило для дочернего класса <span style="color:#FF0000;"><a style="background: #FFD3D3; border-radius: 5px;">.children</a></span>, исходя из того, что тег данного класса вложен в родительский тек с классом <span style="color:#FF0000;"><a style="background: #FFD3D3; border-radius: 5px;">.parent</a></span></p>
+		   </ul>
+		   </div>
+	         <img src="image/3-500x405.png" width="500" height="405" alt=""/>
+	       <p class="tit-line"></p>
+           <p style="line-height: 1.5;">Тег с классом<span style="color:#FF0000;"><a style="background: #FFD3D3; border-radius: 5px;">.children</a></span> будет иметь цвет<span style="color:#FF0000;"><a style="background: #FFD3D3; border-radius: 5px;">#666</a></span> , а тег с классом <span style="color:#FF0000;"><a style="background: #FFD3D3; border-radius: 5px;">.parent</a></span> — <span style="color:#FF0000;"><a style="background: #FFD3D3; border-radius: 5px;"> #999</a></span> . Однако, если мы уберем свойство<span style="color:#FF0000;"><a style="background: #FFD3D3; border-radius: 5px;"> color: #666</a></span> у селектора<span style="color:#FF0000;"><a style="background: #FFD3D3; border-radius: 5px;"> .parent .children</a></span> , то цвет дочернего элемента наследуется от родителя и станет равным <span style="color:#FF0000;"><a style="background: #FFD3D3; border-radius: 5px;">#999</a></span> . В этом заключается особенность<b> наследования</b>.</p>
+           <p class="tit-line"></p>
+		   <p class="tit-line"></p>
+	
+	
+	
+	
+	      <h1 id="#2_4" class="ogl">CSS наследование стилей</h1>
+          <p style="line-height: 1.5;">Вложенность тегов или их иерархия распространяется и на наследование стилей. Рассмотрим на примере:</p>
+	         <img src="image/2026-04-30_09-17-10.png" width="929" height="371" alt=""/>
+	 
+		
+		
+		
+		
+		
+		
+		  <div class="navigation">
+		  <a href="index1.html" class="button">Назад</a>
+		  <a href="index.html" class="button">К оглавлению</a>
+		  <a href="index3.html" class="button">Далее</a>
+	      </div>
+	    <hr>
+		<br>
+</section>
+</body>
+</html>

@@ -1,0 +1,273 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Воспоминания</title>
+<link href="style.css" rel="stylesheet">
+</head>
+
+<body>
+	<section>
+		<p class="tit-line"></p>
+		<p class="tit-line"></p>
+		<h1 style="text-align: center; margin:5% 5s%; font-size: 40px; padding: 2%;">CSS урок 1. Добавление стилей</h1>
+		<p class="tit-line"></p>
+		<p class="tit-line"></p>
+		<div class="block1" style="line-height: 1.5;">Цель урока: знакомство с каскадными таблицами стилей. На уроке рассмотрены методы добавления стилей к html-страницы</div>
+		<div class="navigation">
+		<a href="index.html" class="button" id="ogl">К оглавлению</a>
+		<a href="index2.html" class="button next" style="float: right">Далее</a>
+	    </div>
+	    <hr>
+		
+		<div class="content">
+		 <h2>Содержание:</h2>
+		  <a href="#1_1">Повторение: блочные и строчные теги</a><br>
+		  <a href="#1_2">CSS стили. Методы добавления</a><br>
+		  <a href="#1_3">Метод встраивания (inline) в CSS</a><br>
+		  <a href="#1_4">Метод вложения (embeding) CSS</a><br>
+		  <a href="#1_5">Метод связывания (Linking) в CSS</a>
+		 </div>
+
+		
+		  <p class="tit-line"></p>
+		 <h1 id="1_1" class="ogl">Повторение: блочные и строчные теги</h1>
+		 <p class="tit-line"></p> 
+		<ul>
+		 <li style="font-size:20px;margin-bottom:13px;">Для оформления и использования стилей css применяются блочные теги <code>div</code> и строчные теги <code>span</code>.</li>
+	   	 <li style="font-size:20px;">Вспомним, как они позиционируются на странице и используются:</li>
+		 <p style="font-size:20px;">Пример:</p>
+		 <p class="tit-line"></p>
+		 <div class="code-table">
+         <table>
+         <tr><td><span class="tag">&lt;!doctype html&gt;</span></td></tr>
+         <tr><td><span class="tag">&lt;</span><b>html</b><span class="tag">&gt;</span></td></tr>
+         <tr><td><span class="tag">&lt;</span><b>head</b><span class="tag">&gt;</span></td></tr>
+         <tr><td><span class="tag">&lt;</span><b>meta</b> <span class="tag-na">charset</span>=<span class="tag-name">"utf-8"</span><span class="tag">&gt;</span></td></tr>
+         <tr><td><span class="tag">&lt;</span><b>title</b><span class="tag">&gt;</span>Элементы span и div<span class="tag">&lt;</span><span class="tag-tire">/</span><b>title</b><span class="tag">&gt;</span></td></tr>
+         <tr><td><span class="tag">&lt;</span><span class="tag-tire">/</span><b>head</b><span class="tag">&gt;</span></td></tr>
+         <tr><td><span class="tag">&lt;</span><b>body</b><span class="tag">&gt;</span></td></tr>
+         <tr><td><span class="tag">&lt;</span><b>div</b><span class="tag">&gt;</span>*** DIV 1: Какой-то контент ***<span class="tag">&lt;</span><span class="tag-tire">/</span><b>div</b><span class="tag">&gt;</span></td></tr>
+         <tr><td><span class="tag">&lt;</span><b>div</b><span class="tag">&gt;</span>*** DIV 2: Следует прямо за div 1 ***<span class="tag">&lt;</span><span class="tag-tire">/</span><b>div</b><span class="tag">&gt;</span></td></tr>
+         <tr><td><span class="tag">&lt;</span><b>span</b><span class="tag">&gt;</span>*** SPAN 1: Следует прямо за div 2 ***<span class="tag">&lt;</span><span class="tag-tire">/</span><b>span</b><span class="tag">&gt;</span></td></tr>
+         <tr><td><span class="tag">&lt;</span><b>div</b><span class="tag">&gt;</span>*** DIV 3: Следует прямо за span 1 ***</td></tr>
+         <tr><td><span class="tag">&nbsp;</span><span class="tag">&nbsp;</span><span class="tag">&lt;</span><b>span</b><span class="tag">&gt;</span>*** SPAN 2: внутри div 3 ***<span class="tag">&lt;</span><span class="tag-tire">/</span><b>span</b><span class="tag">&gt;</span></td></tr>
+         <tr><td>Продолжение содержимого div 3 ***</td></tr>
+         <tr><td><span class="tag">&lt;</span><span class="tag-tire">/</span><b>div</b><span class="tag">&gt;</span></td></tr>
+         <tr><td><span class="tag">&lt;</span><span class="tag-tire">/</span><b>body</b><span class="tag">&gt;</span></td></tr>
+         <tr><td><span class="tag">&lt;</span><span class="tag-tire">/</span><b>html</b><span class="tag">&gt;</span></td></tr>
+         </table>
+         </div>
+		 <p class="tit-line"></p>
+         <p style="font-size:20px;">Результат:</p>
+		    <img src="image/image1/2026-05-12_16-15-06.png" alt=""/>
+        </ul>
+         <p class="tit-line"></p>
+         <ul> 
+		 <li style="font-size:20px;">Обратим внимание, что <b>span 1</b> оказался на отдельной строке, только из-за того, что перед ним и после него находятся блочные теги <b>div</b>, которые не «пустили» его на свои строки.</li>
+		 </ul>
+		 <ul>
+		 <li style="font-size:20px;">Тег span может размещаться внутри тега div, как в нашем примере span 2. Тогда как div никогда не может располагаться внутри тега span. <b>Блочный тег не может быть внутри строчного!</b></li>
+		 </ul>
+	     <p class="tit-line"></p>
+		 <p class="tit-line"></p>
+	
+	
+	
+		
+			<h1 id="1_2" class="ogl">CSS стили. Методы добавления</h1>
+			 <ul>
+			 <p><b>CSS - Cascading Style Sheets</b> (каскадные таблицы стилей) - это средство, позволяющее задавать различные визуальные свойства html-тегам</p>
+			 </ul><p class="tit-line"></p>
+			 <p>Рассмотрим основные методы добавления стилей:</p>
+			 <p class="tit-line"></p>
+			 <div class="square">
+			 <li style="font-size:20px;margin-bottom:8px;line-height: 1;">Встраивание (inline)</li>
+			 <li style="font-size:20px;margin-bottom:8px;line-height: 1;">Вложение (embeding)</li>
+			 <li style="font-size:20px;margin-bottom:8px;line-height: 1;">Связывание (linking)</li>
+			 <li style="font-size:20px;margin-bottom:8px;line-height: 1;">Импорт</li>
+			 </div>
+	         <p class="tit-line"></p>
+			 <p class="tit-line"></p>
+		   
+
+	
+	
+	
+		 
+			<h1 id="1_3" class="ogl">Метод встраивания (inline) в CSS</h1>
+			<p class="tit-line"></p>
+			<div class="block1">
+			<ul>
+			<p style="line-height: 1.5;"><b>Метод встраивания</b> (или строковый стиль) - это самый простой метод добавления стиля. Применяется в том случае, когда необходимо применить стиль только к одному единственному конкретному тегу и только один раз</p>
+			</ul>
+			</div>
+			<ul>
+			<p class="tit-line"></p>
+			<p><b>Синтаксис:</b></p>
+			<p class="tit-line"></p>
+			<div class="code-table">
+			<table>	
+            <tr><td>&lt;элемент  style <span class="tag">=</span> <span class="tag-name">"свойство1: значение; свойство2: значение; . . ."</span><span class="tag">;&gt;</span></td></tr>
+			</table>
+		    </div>
+		    </ul>
+		    <p class="tit-line"></p>
+			<p class="tit-line"></p>
+		    <p class="tit-line"></p>
+            <p>Рассмотрим основные понятия, встречающиеся при использовании стилей.</p>
+                <img src="image/image1/2026-05-12_16-28-58.png" alt=""/>
+            <p class="tit-line"></p>
+		    <div class="block3">
+			<ul>	
+			<p style="line-height: 1.5;"><b>Пример:</b> Первый абзац без стилей, ко второму абзацу применен стиль</p>
+			</ul>	
+			</div>
+	        <div class="code-table">
+			<table>	
+            <tr><td>
+			&lt;p<span class="tag">&gt;</span>Обычный текст&lt;/p<span class="tag">&gt;</span>
+			</td></tr>
+			</table>
+		    </div>
+		    <p class="tit-line"></p>
+		   <div class="code-table">
+			<table>	
+            <tr><td>
+			<span class="tag">&lt;</span><b>p</b> <span class="tag-na">style</span><span class="tag">=</span><span class="tag-name">"color:red; background:#cccccc"</span><span class="tag">&gt;</span>Абзац с методом встраивания<span class="tag">&lt;</span><span class="tag-tire">/</span><b>p</b><span class="tag"><span class="tag">&gt;</span></span>
+			</td></tr>
+			</table>
+		    </div>
+			<p class="tit-line"></p>
+		    <p style="font-size:20px;"><b>Результат:</b></p>
+			<p class="tit-line"></p>
+	           <img src="image/image1/2026-05-12_16-44-11.png" alt=""/>
+            <p class="tit-line"></p>
+		    <p class="tit-line"></p>
+         
+	
+	
+	
+	 
+			<h1 id="1_4" class="ogl">Метод вложения (embeding) CSS</h1>
+			<p>Метод вложения или внутренний стиль описывается в области <code>head</code> веб-страницы.</p>
+		    <p class="tit-line"></p>
+			<div class="block1">
+			<ul>	
+			<p style="line-height: 1.5;"><b>Метод вложения</b> (внутренний стиль) нужен при необходимости использования одинакового стиля для тега (селектора) во всем документе. Например, для тега абзаца <code style="background: #FFD3D3; border-radius: 5px;">p</code> можно добавить стиль данным методом, при этом имея в виду, что все теги абзаца на странице будут оформлены данным стилем</p>
+			</ul>
+			</div>
+                <img src="image/image1/2026-05-12_16-45-32.png" alt=""/>
+            <p class="tit-line"></p>
+            <li style="font-size:20px;line-height: 1.5;">Итак, селектор - это формальное описание элемента (тега), или их группы, к которому должны быть применены созданные правила стиля.</li>
+		    <br>
+	        <li style="font-size:20px;line-height: 1.5;">В описании селекторов и имен стилей не должно быть пробелов.</li>
+			<p class="tit-line"></p>
+            <div class="block2">
+			<ul>	
+			<p style="line-height: 1.5;"><b>Пример:</b> в примере использован метод вложения, поэтому оба абзаца в документе будут стилизованы</p>
+		    </ul>
+		    </div>
+		    <p class="tit-line"></p>
+            <div class="code-table">
+         <table>
+         <tr><td>&lt;head<span class="tag">&gt;</span></td></tr>
+         <tr><td>&lt;style type<span class="tag">=</span><span class="tag-name">"text/css"</span><span class="tag">&gt;</span></td></tr>
+         <tr><td><span style="margin-left: 23px;">p<span class="tag">{</span></span></td></tr>
+         <tr><td><span style="margin-left: 90px;"><b>color</b><span class="tag">:</span><span style="color: #B70003">red</span><span class="tag">;</span></span></td></tr>
+         <tr><td><span style="margin-left: 90px;"><b>background</b></span><span class="tag">:</span><span style="color: #C42AE4">#cccccc</span><span class="tag">;</span></td></tr>
+		 <tr><td><span style="margin-left: 23px;"><span class="tag">}</span></span></td></tr>
+         <tr><td>&lt;/style<span class="tag">&gt;</span></td></tr>
+		 <tr><td>&lt;/head<span class="tag">&gt;</span></td></tr> 
+		 <tr><td>&lt;body<span class="tag">&gt;</span></td></tr> 
+         <tr><td>&lt;body<span class="tag">&gt;</span></td></tr>
+		 <tr><td>&lt;p<span class="tag">&gt;</span>Абзац<span style="color: #C42AE4">1</span>&lt;/p<span class="tag">&gt;</span></td></tr>
+		 <tr><td>&lt;p<span class="tag">&gt;</span>Абзац<span style="color: #C42AE4">2</span>&lt;/p<span class="tag">&gt;</span></td></tr>
+		 <tr><td>...</td></tr>
+         </table>
+         </div>
+			<p class="tit-line"></p>
+            <p style="font-size:20px;"><b>Результат:</b></p>
+			<p class="tit-line"></p>
+                <img src="image/image1/2026-05-12_17-06-39.png" alt=""/>
+            <p class="tit-line"></p>
+            <p style="font-size:20px;line-height: 1.5;">В качестве селектора может выступать любой тег HTML для которого определяются правила форматирования, такие как: цвет, фон, размер и т.д.</p>
+			<p class="tit-line"></p>
+	        <div class="block2">
+			<ul>
+			<p style="line-height: 1.5;"><b>Пример:</b> использования вложенного стиля для разных селекторов (тегов)</p>
+			</ul>
+		    </div>
+		 <p class="tit-line"></p>
+               <div class="code-table">
+         <table>
+         <tr><td>&lt;head<span class="tag">&gt;</span></td></tr>
+         <tr><td>&lt;style type<span class="tag">=</span><span class="tag-name">"text/css"</span><span class="tag">&gt;</span></td></tr>
+         <tr><td>h1<span class="tag">{</span></td></tr>
+         <tr><td><span style="margin-left: 90px;"><b>border-width</b><span class="tag">:</span><span style="color:#C42AE4"> 1</span><span class="tag">;</span></span></td></tr>
+         <tr><td><span style="margin-left: 90px;"><b>border</b></span><span class="tag">:</span><span style="color:#B70003"> groove</span><span class="tag">;</span></td></tr>
+		 <tr><td><span style="margin-left: 90px;"><b>text-align</b></span><span class="tag">:</span><span style="color: #B70003">center</span><span class="tag">;</span></td></tr>
+		 <tr><td><span style="margin-left: 90px;"><b>color</b></span><span class="tag">:</span><span style="color: #D82B2B"> green</span></td></tr>
+		 <tr><td><span style="margin-left: 90px;"><span class="tag">}</span></span></td></tr>
+		 <tr><td>h2<span class="tag">{</span></td></tr>
+         <tr><td><span style="margin-left: 90px;"><b>color</b><span class="tag">:</span><span style="color:#D82B2B"> maroon</span><span class="tag">;</span></span></td></tr>
+         <tr><td><span style="margin-left: 90px;"><b>font-style</b></span><span class="tag">:</span><span style="color:#B70003"> italic</span><span class="tag">;</span></td></tr>
+		 <tr><td><span style="margin-left: 90px;"><span class="tag">}</span></span></td></tr> 
+		 <tr><td>...</td></tr>
+         <tr><td>&lt;/style<span class="tag">&gt;</span></td></tr>
+         </table>
+         </div>
+            <p class="tit-line"></p>
+           <p class="tit-line"></p>
+	
+	
+	
+	
+    <h1 id="1_5" class="ogl">Метод связывания (Linking) в CSS</h1>
+	<p style="font-size:20px;">Это самый надежный и самый эффективный способ использования каскадных таблиц стилей.</p>
+	<p class="tit-line"></p>
+	<div class="block1">
+	<ul>	
+	<p style="line-height: 1.5;">Используется <b>Метод связывания</b> (или внешний стиль) для того, чтобы обеспечить единый стиль для всех страниц сайта. Подключив файл со стилями ко всем страницам, обеспечится влияние правил, описанных в файле, на все теги</p>
+	</ul>	
+	</div>
+    <p style="font-size:20px;">Чтобы подключить к странице файл с таблицами стилей, надо использовать элемент <code style="background: #FFD3D3; border-radius: 5px;">LINK</code> в секции <code style="background: #FFD3D3; border-radius: 5px;">HEAD</code>:</p>
+        <img src="image/image1/2026-05-12_17-18-34.png" alt=""/>
+    <p class="tit-line"></p>
+	<div class="block3">
+	<ul>
+	<p style="line-height: 1.5;"><b>Задание css1_1.</b></p>
+	<p class="tit-line" ></p>	
+		<li style="font-size:20px;margin-bottom:8px;">Используя метод <u>встраивания</u> определите цвет текста элемента h1.</li>
+		<li style="font-size:20px;margin-bottom:8px;">Используя метод <u>вложения</u> определите задний фон страницы.</li>
+		<li style="font-size:20px;margin-bottom:8px;">Используя метод <u>связывания</u> определите написание параграфа курсивным стилем.</li>
+    <p class="tit-line" ></p>	
+	<p style="font-size:20px;margin-bottom:8px;">Работайте над текстом:</p>
+    <p class="tit-line"></p>
+	   <div class="code-table">
+        <table>
+		<tr><td><span class="tag">&lt;</span>body<span class="tag">&gt;</span></td></tr>
+        <tr><td><span class="tag">&lt;</span>h1<span class="tag">&gt;</span>В моей душе<span class="tag">&lt;</span><span class="tag-tire">/</span>h1<span class="tag">&gt;</span></td></tr>
+	    <tr><td><span class="tag">&lt;</span>p<span class="tag">&lt;</span></td></tr>
+		<tr><td>Я хочу быть ребенком, наивным и смелым,<span class="tag">&lt;</span>br<span class="tag-tire">/</span><span class="tag">&gt;</span></td></tr>
+        <tr><td>Ничего не бояться и верить в добро.<span class="tag">&lt;</span>br<span class="tag-tire">/</span><span class="tag">&gt;</span></td></tr>
+        <tr><td>Я бы снова писала по черному белым:<span class="tag">&lt;</span>br<span class="tag-tire">/</span><span class="tag">&gt;</span></td></tr>
+        <tr><td>Два плюс два - ну, четыре, конечно равно! </td></tr>
+		 <tr><td><span class="tag">&lt;</span><span class="tag-tire">/</span>p<span class="tag">&lt;</span></td></tr>	 
+         </table>
+         </div>
+	</ul>
+    </div>
+	
+	
+        <div class="navigation">
+	    <a href="index.html" class="button">К оглавлению</a>
+		<a href="index2.html" class="button next" style="float: right">Далее</a>
+	    </div>
+	    <hr>
+        <br>
+        </section>
+
+
+</body>
+</html>

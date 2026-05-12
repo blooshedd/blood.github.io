@@ -1,0 +1,196 @@
+	<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Воспоминания</title>
+<link href="style.css" rel="stylesheet">
+</head>
+
+<body>
+	<section>
+		<p class="tit-line"></p>
+		<p class="tit-line"></p>
+		<h1 style="text-align: center; margin:5% 5%; font-size: 40px; padding: 2%">CSS урок 3. Контекстные, соседние и дочерние селекторы</h1>
+		<p class="tit-line"></p>
+		<p class="tit-line"></p>
+		<div class="block1" style="line-height: 1.5;">Цель урока: знакомство с контекстными, дочерними и соседними селекторами css. Рассмотрены примеры создания стилей, приоритет селекторов</div>
+		<div class="navigation">
+		<a href="index2.html" class="button">Назад</a>
+		<a href="index.html" class="button">К оглавлению</a>
+		<a href="index4.html" class="button">Далее</a>
+		</div>
+	    <hr>
+		
+		<div class="content">
+			<h2>Содержание:</h2>
+			<a href="#3_1">Три вида взаимоотношений в дереве элементов</a><br>
+			<a href="#3_2">Контекстные селекторы CSS (предки-потомки)</a><br>
+			<a href="#3_3">Соседние селекторы CSS (братья)</a><br>
+			<a href="#3_4">Дочерние селекторы в CSS (селектор родитель-ребенок)</a><br>
+		</div>
+		
+		
+		<br>
+	    <h1 id="3_1" class="ogl">Три вида взаимоотношений в дереве элементов</h1>
+		<p class="tit-line"></p>
+		<p style="line-height: 0.5;">1. Предки-потомки;</p>
+		<p style="line-height: 0.5;">2. Родитель-ребенок;</p>
+	    <p style="line-height: 0.5;">3 .Братья (соседи)</p>
+		<p class="tit-line"></p>
+		<p style="line-height: 1.5;">Рассмотри дерево элементов на примере:</p>
+		<p class="tit-line"></p>
+		   <img src="image/2026-04-30_10-19-54.png" width="916" height="146" alt=""/>
+		<p class="tit-line"></p>
+	    <p style="line-height: 1.5;"><b>Родительский элемент – тег, который содержит в себе рассматриваемый элемент.</b></p>
+		<p class="tit-line"></p>
+		<p style="line-height: 1.5;">В примере отношения родитель-ребенок:</p>
+		<p class="tit-line"></p>
+		<ul>
+		<li style="font-size:20px;margin-bottom:8px; line-height: 1.5;">Элемент <span style="color:#FF0000;"><a style="background: #FFD3D3; border-radius: 5px;">div</a></span> (2 строка) — родительский по отношению к тегу <span style="color:#FF0000;"><a style="background: #FFD3D3; border-radius: 5px;">h1</a></span> (3 строка), тогда как <span style="color:#FF0000;"><a style="background: #FFD3D3; border-radius: 5px;">h1</a></span> — напротив, дочерний элемент (ребенок)</li>
+	    <li style="font-size:20px;margin-bottom:8px;  line-height: 1.5;">Элемент <span style="color:#FF0000;"><a style="background: #FFD3D3; border-radius: 5px;">p</a></span> (4 строка) является родительским по отношению к <span style="color:#FF0000;"><a style="background: #FFD3D3; border-radius: 5px;">strong</a></span> (4 строка), тогда как <span style="color:#FF0000;"><a style="background: #FFD3D3; border-radius: 5px;">strong</a></span> — напротив, дочерний элемент (ребенок)</li>
+		<li style="font-size:20px;margin-bottom:8px;  line-height: 1.5;">Элемент <span style="color:#FF0000;"><a style="background: #FFD3D3; border-radius: 5px;">div</a></span> (2 строка) является родительским по отношению к <span style="color:#FF0000;"><a style="background: #FFD3D3; border-radius: 5px;">strong</a></span> (6 строка), тогда как <span style="color:#FF0000;"><a style="background: #FFD3D3; border-radius: 5px;">strong</a></span> — напротив, дочерний элемент (ребенок)</li>
+	    <li style="font-size:20px;margin-bottom:8px;  line-height: 1.5;">Элемент <span style="color:#FF0000;"><a style="background: #FFD3D3; border-radius: 5px;">p</a></span> (8 строка) является родительским по отношению к <span style="color:#FF0000;"><a style="background: #FFD3D3; border-radius: 5px;">strong</a></span> (8 строка), тогда как <span style="color:#FF0000;"><a style="background: #FFD3D3; border-radius: 5px;">strong</a></span> — напротив, дочерний элемент (ребенок)</li>
+		<li style="font-size:20px;margin-bottom:8px;  line-height: 1.5;">Элемент <span style="color:#FF0000;"><a style="background: #FFD3D3; border-radius: 5px;">body</a></span> (1 строка) является родительским по отношению к <span style="color:#FF0000;"><a style="background: #FFD3D3; border-radius: 5px;">div</a></span> (2 строка) и <span style="color:#FF0000;"><a style="background: #FFD3D3; border-radius: 5px;">p</a></span> (8 строка)</li>
+	    </ul>
+		<p class="tit-line"></p>
+	    <p style="line-height: 1.5;"><b>Предок – элемент, который располагается на несколько уровней выше и содержит в себе рассматриваемый элемент.</b></p>
+		<p class="tit-line"></p>
+	    <p style="line-height: 1.5;">В примере отношение предок-потомок:</p>
+		<p class="tit-line"></p>
+		<ul>
+		<li style="font-size:20px;margin-bottom:8px; line-height: 1.5;">Элемент <span style="color:#FF0000;"><a style="background: #FFD3D3; border-radius: 5px;">body</a></span> является предком для элементов <span style="color:#FF0000;"><a style="background: #FFD3D3; border-radius: 5px;">h1</a></span>(3 строка), <span style="color:#FF0000;"><a style="background: #FFD3D3; border-radius: 5px;">p</a></span> и <span style="color:#FF0000;"><a style="background: #FFD3D3; border-radius: 5px;">strong</a></span> (4 строка), <span style="color:#FF0000;"><a style="background: #FFD3D3; border-radius: 5px;">p</a></span> и <span style="color:#FF0000;"><a style="background: #FFD3D3; border-radius: 5px;">strong</a></span> (5 строка), <span style="color:#FF0000;"><a style="background: #FFD3D3; border-radius: 5px;">strong</a></span> (6 строка) и <span style="color:#FF0000;"><a style="background: #FFD3D3; border-radius: 5px;">strong</a></span> (8 строка); в то время как все, перечисленные элементы являются потомками <span style="color:#FF0000;"><a style="background: #FFD3D3; border-radius: 5px;">body</a></span></li>
+		<li style="font-size:20px;margin-bottom:8px; line-height: 1.5;">Элемент <span style="color:#FF0000;"><a style="background: #FFD3D3; border-radius: 5px;">div</a></span> (2 строка) является предком для элементов <span style="color:#FF0000;"><a style="background: #FFD3D3; border-radius: 5px;">strong</a></span> (4 и 5 строка); в то время как <span style="color:#FF0000;"><a style="background: #FFD3D3; border-radius: 5px;">strong</a></span> является потомком для <span style="color:#FF0000;"><a style="background: #FFD3D3; border-radius: 5px;">div</a></span></li>
+	    </ul>
+		<p class="tit-line"></p>
+		<p style="line-height: 1.5;"><b>Братский элемент (соседний) – элемент, который имеет общий родительский элемент с рассматриваемым.</b></p>
+		<p class="tit-line"></p>
+		<p style="line-height: 1.5;">В примере отношение соседи (братья):</p>
+		<p class="tit-line"></p>
+		<ul>
+	    <li style="font-size:20px;margin-bottom:8px;line-height: 1.5;">Элементы <span style="color:#FF0000;"><a style="background: #FFD3D3; border-radius: 5px;">h1</a></span> (3 строка), <span style="color:#FF0000;"><a style="background: #FFD3D3; border-radius: 5px;">p</a></span>(4 строка), <span style="color:#FF0000;"><a style="background: #FFD3D3; border-radius: 5px;">p</a></span>(5 строка) и <span style="color:#FF0000;"><a style="background: #FFD3D3; border-radius: 5px;">strong</a></span>(6 строка) являются братьями или соседними элементами.</li>
+		<li style="font-size:20px;margin-bottom:8px;line-height: 1.5;;">Элементы <span style="color:#FF0000;"><a style="background: #FFD3D3; border-radius: 5px;">div</a></span>(2 строка) и <span style="color:#FF0000;"><a style="background: #FFD3D3; border-radius: 5px;">p</a></span>(8 строка) являются братьями или соседними элементами.</li>
+	    </ul>
+		<br>
+		
+		
+		
+		
+		
+		
+		
+		
+		<p class="tit-line"></p>
+		 <h1 id="3_2" class="ogl">Контекстные селекторы CSS (предки-потомки)</h1>
+		<p style="line-height: 1.5;">Правила контекстных селекторов также распространяются и на отношение родитель-ребенок.</p>
+		<p class="tit-line"></p>
+		<ul>
+		<p><b>Синтаксис:</b></p>
+		<img src="image/2026-04-30_08-41-13.png" width="944" height="93" alt=""/>
+		<p><span style="color:#FF0000;"><a style="background: #FFD3D3; border-radius: 5px;line-height: 1.5;">x</a></span> — селектор-предок, <span style="color:#FF0000;"><a style="background: #FFD3D3; border-radius: 5px;line-height: 1.5;">y</a></span> — селектор-потомок</p>
+        <p style="line-height: 1.5;">Правило будет действовать на селектор <span style="color:#FF0000;"><a style="background: #FFD3D3; border-radius: 5px;">y</a></span></p>
+	    </ul>
+		<div class="block2">
+    	<ul>
+		<p style="line-height: 1.5;"><b>Пример:</b> В html-код страницы необходимо добавить правило для контекстных селекторов:</p>
+		фото
+		<p style="line-height: 1.5;"><b>Необходимо:</b> Создать правило контекстных секторов для элемента <span style="color:#FF0000;"><a style="background: #FFD3D3; border-radius: 5px;">b</a></span></p>
+		</ul>
+		</div>
+		<p><b>Выполнение:</b></p>
+		<br>
+		<img src="image/2026-04-30_10-23-36.png" width="918" height="113" alt=""/>
+		<p><b>Результат:</b></p>
+		<br>
+	    <img src="image/2026-04-30_10-24-56.png" width="894" height="107" alt=""/>
+		<p style="line-height: 1.5;">В примере отношение предок-потомок характерно для элементов <span style="color:#FF0000;"><a style="background: #FFD3D3; border-radius: 5px;">p</a></span> и <span style="color:#FF0000;"><a style="background: #FFD3D3; border-radius: 5px;">b</a></span> в третьей строке. Но контекстные селекторы распространяются и на отношения родитель-ребенок, т.е. в примере — элементы <span style="color:#FF0000;"><a style="background: #FFD3D3; border-radius: 5px;">p</a></span> и <span style="color:#FF0000;"><a style="background: #FFD3D3; border-radius: 5px;">b</a></span> во второй строке.</p>
+		<p style="line-height: 1.5;">Рассмотрим еще примеры, иллюстрирующие использование контекстных селекторов:</p>
+	    <img src="image/2026-04-30_10-29-27.png" width="926" height="401" alt=""/>
+		
+		
+		
+		
+		
+		<p class="tit-line"></p>
+	    <h1 id="3_3" class="ogl">Соседние селекторы CSS (братья)</h1>
+		<ul>
+		<p><b>Синтаксис:</b></p>
+		<p class="tit-line"></p>
+	       <img src="image/2026-05-01_16-00-50.png" width="835" height="82" alt=""/>
+		<p class="tit-line"></p>
+		<p style="line-height: 1.5;">Стиль применяется для соседнего селектора <span style="color:#FF0000;"><a style="background: #FFD3D3; border-radius: 5px;">y</a></span></p>
+		<p class="tit-line"></p>
+		</ul>
+	    <div class="block2">
+		<ul>
+		<p style="line-height: 1.5;"><b>Пример:</b> В hrml-код страницы необходимо добавить правило для соседних селекторов:</p>
+		<p style="line-height: 0;"></p>
+	       <img src="image/2026-05-01_16-04-25.png" width="825" height="22" alt=""/> 
+		<p style="line-height: 1.5;"><b>Необходимо:</b> Создать правило для соседнего селектора <span style="color:#FF0000;"><a style="background: #FFD3D3; border-radius: 5px;">i</a></span></p>
+		</ul>
+		</div>
+		<p><b>Выполнение:</b></p>
+		<p class="tit-line"></p>
+	       <img src="image/2026-05-01_16-08-01.png" width="865" height="59" alt=""/>
+		<p class="tit-line"></p>
+		<p><b>Результат:</b></p>
+		<p class="tit-line"></p>
+	       <img src="image/2026-05-01_16-09-08.png" width="934" height="102" alt=""/>
+		<p style="line-height: 1.5;">В примере теги <span style="color:#FF0000;"><a style="background: #FFD3D3; border-radius: 5px;">i</a></span> и <span style="color:#FF0000;"><a style="background: #FFD3D3; border-radius: 5px;">b</a></span> не перекрываются между собой другими элементами и поэтому представляют собой соседние селекторы. То, что они расположены внутри элемента <span style="color:#FF0000;"><a style="background: #FFD3D3; border-radius: 5px;">p</a></span>, никак не влияет на их отношение.</p>
+		<p class="tit-line"></p>
+		<p class="tit-line"></p>
+		
+		
+		
+		
+		<p class="tit-line"></p>
+	    <h1 id="3_4" class="ogl">Дочерние селекторы в CSS (селектор родитель-ребенок)</h1>
+		<ul>
+		<p><b>Синтаксис:</b></p>
+		<p class="tit-line"></p>
+	        <img src="image/2026-05-01_16-12-27.png" width="743" height="82" alt=""/>
+		<p>Здесь <span style="color:#FF0000;"><a style="background: #FFD3D3; border-radius: 5px;">x</a></span> — родитель, <span style="color:#FF0000;"><a style="background: #FFD3D3; border-radius: 5px;">y</a></span> — ребенок</p>
+        <p style="line-height: 1.5;">Правило будет действовать на дочерний селектор <span style="color:#FF0000;"><a style="background: #FFD3D3; border-radius: 5px;">y</a></span></p>
+		</ul>
+		<div class="block2">
+		<ul>	
+		<p style="line-height: 1.5;"><b>Пример:</b> В hrml-код страницы необходимо добавить правило для дочернего селектора:</p>
+	       <img src="image/2026-05-01_16-18-34.png" width="802" height="61" alt=""/>
+        <p style="line-height: 1.5;"><b>Необходимо:</b> создать правило для дочернего селектора <span style="color:#FF0000;"><a style="background: #FFD3D3; border-radius: 5px;">i</a></span> (1 строка)</p>
+		</ul>
+		</div>
+		<p><b>Выполнение:</b></p>
+		<p class="tit-line"></p>
+           <img src="image/2026-05-01_16-21-16.png" width="807" height="58" alt=""/>
+		<p class="tit-line"></p>
+		<p><b>Результат:</b></p>
+		<p class="tit-line"></p>
+          <img src="image/2026-05-01_16-22-31.png" width="949" height="131" alt=""/> 
+		<p class="tit-line"></p>
+	    <p style="line-height: 1.5;">В третьей строке примера тег <span style="color:#FF0000;"><a style="background: #FFD3D3; border-radius: 5px;">i</a></span> не является дочерним для тега <span style="color:#FF0000;"><a style="background: #FFD3D3; border-radius: 5px;">div</a></span>, так как они перекрываются тегом <span style="color:#FF0000;"><a style="background: #FFD3D3; border-radius: 5px;">p</a></span>.</p>
+		<p class="tit-line"></p>	
+	    <div class="block3">
+		<ul>
+		<p style="line-height: 1.5;"><b>Задание:</b> Создайте всевозможные правила для стилизации каждого из селекторов в расположенном ниже фрагменте кода:</p>
+		<p style="line-height: 0;"></p>
+		<p class="tit-line"></p>
+	       <img src="image/2026-05-01_16-27-16.png" width="835" height="439" alt=""/>
+		<p class="tit-line"></p>
+		<p style="line-height: 1.5;">Используйте CSS-свойства для <span style="color:rgb(144,0,32)"><b><a href="index6.html" style="color:#900020;text-decoration:none;" onmouseover="this.style.color='#fff3dd';this.style.borderBottomColor='#fff3dd'" onmouseout="this.style.color='#900020';this.style.borderBottomColor='#900020'">оформления текста</a></b></span> и для <span style="color:rgb(144,0,32)"><b><a href="index7.html" style="color:#900020;text-decoration:none;" onmouseover="this.style.color='#fff3dd';this.style.borderBottomColor='#fff3dd'" onmouseout="this.style.color='#900020';this.style.borderBottomColor='#900020'">форматирования шрифта.</a></b></span></p>
+		</ul>
+		</div>
+		
+		
+		
+		
+		
+		
+<div class="navigation">
+	    <a href="index2.html" class="button">Назад</a>
+	    <a href="index.html" class="button">К оглавлению</a>
+		<a href="index4.html" class="button">Далее</a>
+	    </div>
+	    <hr>
+	    <br>
+	</section>
+</body>
+</html>

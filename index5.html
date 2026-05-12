@@ -1,0 +1,174 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Воспоминания</title>
+<link href="style.css" rel="stylesheet">
+</head>
+
+<body>
+	<section>
+		<p class="tit-line"></p>
+		<p class="tit-line"></p>
+		<h1 style="text-align: center; margin:5% 5%; font-size: 40px; padding: 2%">CSS урок 5. Медиа-запросы. Псевдоклассы и псевдоэлементы CSS</h1>
+		<p class="tit-line"></p>
+		<div class="block1" style="line-height: 1.5;"><b>Цель урока: </b>Рассмотрение понятия «медиа-запросы» для создания отзывчивой верстки. Знакомство с псевдоклассами и псевдоэлементами в CSS. Рассмотрены примеры создания стилей</div>
+		<div class="navigation">
+		<a href="index4.html" class="button">Назад</a>
+		<a href="index.html" class="button">К оглавлению</a>
+		<a href="index6.html" class="button">Далее</a>
+		</div>
+	<hr>
+	
+		<div class="content">
+			<h2>Содержание:</h2>
+			<a href="#5">Медиа-запросы в CSS</a><br>
+			<a href="#5_1">Псевдоклассы в CSS</a><br>
+			<a href="#5_2">Псевдоэлементы CSS</a>
+		</div>
+		<p class="tit-line"></p>
+		<p class="tit-line"></p>
+		
+	
+		
+		<h1 id="5" class="ogl">Медиа-запросы в CSS</h1>
+		<p style="line-height: 1.5;"><b>Медиа-запросы</b> — логическое выражение, которое может быть равно истине (true) или лжи (false)</p>
+		<p class="tit-line"></p>
+		<p style="line-height: 1.5;">Условием является либо параметры устройства, на котором отображается веб-страница, либо размеры экрана пользователя.</p>
+		<p class="tit-line"></p>
+		<p style="line-height: 1.5;">Медиа-запрос записывается либо в стилевом файле, либо во вложенном стиле и имеет следующую структуру:</p>
+		<img src="image/2026-05-04_10-18-13.png" width="501" height="371" alt="">
+		<p class="tit-line"></p>
+		<p style="line-height: 1.5;"><span style="color:#FF0000;"><a style="background: #FFD3D3; border-radius: 5px;">all</a></span> — все устройста. Может быть <span style="color:#FF0000;"><a style="background: #FFD3D3; border-radius: 5px;">screen</a></span> | <span style="color:#FF0000;"><a style="background: #FFD3D3; border-radius: 5px;">print</a></span> | <span style="color:#FF0000;"><a style="background: #FFD3D3; border-radius: 5px;">tv</a></span></p>
+		<p class="tit-line"></p>
+		<p style="line-height: 1.5;"><span style="color:#FF0000;"><a style="background: #FFD3D3; border-radius: 5px;">max-width</a></span> — <b>медиа функция</b>, которая может задавать параметры указанного устройства или разрешение экрана</p>
+		<p style="line-height: 1.5;">В примере устройство с максимальным разрешением экрана — 480px и с минимальным — 320px:</p>
+		  <img src="image/2026-05-04_10-24-08.png" width="499" height="122" alt=""/>
+		<p class="tit-line"></p>
+		<p style="line-height: 1.5;">Из примера видно, что функции могут содержать логические условия: <span style="color:#FF0000;"><a style="background: #FFD3D3; border-radius: 5px;">AND</a></span> — И, <span style="color:#FF0000;"><a style="background: #FFD3D3; border-radius: 5px;">NOT</a></span> — НЕ и <span style="color:#FF0000;"><a style="background: #FFD3D3; border-radius: 5px;">ONLY</a></span> — только</p>
+		<p class="tit-line"></p>
+		<div class="block1">
+		<ul>
+		<p style="line-height: 1.5;">Медиа-запросы логично размещать после всех описанных стилей</p>
+		</ul>
+		</div>
+		<p class="tit-line"></p>
+		<p class="tit-line"></p>
+			
+		
+		<h1 id="5_1" class="ogl">Псевдоклассы в CSS</h1>
+		<p style="line-height: 1.5;"><b>Псевдоклассы</b> определяют динамическое состояние элементов, которое изменяется с помощью действий пользователя.</p>
+		<p class="tit-line"></p>
+		<div class="block3">
+		<ul>
+		<p style="line-height: 1.5;"><b>Важно:</b> На псевдокласс указывает наличие двоеточия (<span style="color:#FF0000;"><a style="background: #FFFFFF; border-radius: 5px;">:</a></span>)</p>
+		</ul>
+		</div>
+		<p>
+        <li style="font-size:20px;">Три псевдокласса определены именно <b>для гиперссылки</b> (для тега a):</li>
+	    <ul> 
+		<ul>
+	      <img src="image/2026-05-04_10-36-17.png" width="869" height="52" alt=""/><br>
+		<p style="line-height: 1.5;">* active — псевдокласс не только для гиперссылки</p></ul>
+		</ul>
+        <li style="font-size:20px;">Псевдоклассы <b>для всех элементов</b>:</li>
+	    <ul>
+			<img src="image/2026-05-04_10-41-21.png" width="871" height="18" alt="" style="padding-left: 40px;"/></ul>
+        <li style="font-size:20px;">Псевдоклассы <b>для всех элементов управления</b>:</li>
+		<ul>
+		  <img src="image/2026-05-04_10-43-20.png" width="871" height="37" alt="" style="padding-left: 40px;"/>
+		</ul></p>
+		<p class="tit-line"></p>
+        <div class="block2">
+		<ul> 
+		<p style="line-height: 1.5;"><b>Пример:</b> На странице расположено текстовое поле. Необходимо взять элемент в толстую черную рамку, когда он в фокусе, и в толстую красную, когда он активен</p>
+		</ul>
+	    </div>
+	    <p><b>Выполнение:</b></p>
+	    <p class="tit-line"></p>
+	      <img src="image/2026-05-04_10-46-57.png" width="1100" height="118" alt=""/>
+	    <p><b>Результат:</b></p>
+	     <img src="image/2026-05-04_10-49-52.png" width="1100" height="51" alt=""/>
+	    <p class="tit-line"></p>
+	    <p class="tit-line"></p>
+	
+	
+	
+	
+		<h1 id="5_2" class="ogl">Псевдоэлементы CSS</h1>
+		<p style="line-height: 1.5;">Псевдоэлементы позволяют, во-первых, задать стиль некоторых частей элементов, которые не определены в дереве элементов документа, а, во-вторых, генерировать содержимое, которого нет в исходном коде текста.</p>
+	    <ul>
+        <p style="line-height: 1.5;"><b>Псевоэлементы, определяющие новые элементы:</b></p>
+		  <img src="image/2026-05-04_10-51-56.png" width="1048" height="37" alt=""/>
+        </ul>
+		<div class="block2">
+		<ul>	  
+	    <p style="line-height: 1.5;"><b>Пример: </b> Для первой строки параграфа применить курсивный стиль шрифта, первую букву абзаца сделать красным цветом</p>
+	    </ul>
+	    </div>
+		<p><b>Выполнение:</b></p>
+	      <img src="image/2026-05-04_10-55-10.png" width="924" height="153" alt=""/> 
+	    <p><b>Результат:</b></p>
+          <img src="image/2026-05-04_10-56-19.png" width="923" height="147" alt=""/>
+	    <ul>
+        <p style="line-height: 1.5;"><b>Псевоэлементы, генерирующие содержимое:</b></p>
+		<p class="tit-line"></p>
+	      <img src="image/2026-05-04_10-57-47.png" width="876" height="38" alt=""/>
+        </ul>
+        <div class="block2">
+	    <ul>
+	     <p style="line-height: 1.5;"><b>Пример:</b> К содержимому абзаца с классом <span style="color:#FF0000;"><a style="background: #FFD3D3; border-radius: 5px;">new</a></span> добавить дополнительное слово — Ого!.</p>
+	    </ul>
+	    </div>
+	    <p><b>Выполнение:</b></p>
+	    <p class="tit-line"></p>
+	      <img src="image/2026-05-04_11-00-42.png" width="923" height="152" alt=""/>
+	    <p><b>Результат:</b></p>
+	      <img src="image/2026-05-04_11-01-33.png" width="928" height="148" alt=""/>
+	    <div class="block2">
+	    <ul>	
+	    <p style="line-height: 1.5;"><b>Пример:</b> Для маркированного списка убрать маркер и установить вместо него какой-либо символ</p>
+	    </ul>
+	    </div>
+	    <p><b>Выполнение:</b></p>
+	    <p class="tit-line"></p>
+	      <img src="image/2026-05-04_11-08-08.png" width="922" height="266" alt=""/>
+	    <p><b>Результат:</b></p>
+	      <img src="image/2026-05-04_11-09-08.png" width="923" height="142" alt=""/>
+	    <p class="tit-line"></p>
+	    <div class="block3">
+	    <ul>
+		<p class="tit-line"></p>
+	    <p style="line-height: 1.5;"><b>Задание:</b> Скопируйте текст, расположенный ниже, и вставьте в веб-страницу. Используя <span style="color:rgb(144,0,32)"><b><a href="index1.html#embed" style="color:#900020;text-decoration:none;" onmouseover="this.style.color='#fff3dd';this.style.borderBottomColor='#fff3dd'" onmouseout="this.style.color='#900020';this.style.borderBottomColor='#900020'">вложенный стиль</a></b></span> css либо <span style="color:rgb(144,0,32)"><b><a href="index1.html#linking" style="color:#900020;text-decoration:none;" onmouseover="this.style.color='#fff3dd';this.style.borderBottomColor='#fff3dd'" onmouseout="this.style.color='#900020';this.style.borderBottomColor='#900020'">отдельный файл css</a></b></span>, создайте следующие правила, чтобы достигнуть эффекта как на итоговом изображении.</p>
+	    <p style="line-height: 1.5;"><b>Текст:</b></p>
+	      <img src="image/2026-05-04_11-13-22.png" width="950" height="708" alt=""/>
+		<p class="tit-line"></p>
+		<p style="line-height: 1.5;"><b>Необходимые правила:</b></p>
+		<p class="tit-line"></p>
+          <img src="image/2026-05-04_11-14-42.png" width="950" height="148" alt=""/>
+		<p style="line-height: 1.3;">
+		<p class="tit-line"></p>
+		<b style="line-height: 1.5;">Свойства:</b><br>
+        <span style="color:rgb(144,0,32)"><b><a href="index6.html#trans" style="color:#900020;text-decoration:none;" onmouseover="this.style.color='#fff3dd';this.style.borderBottomColor='#fff3dd'" onmouseout="this.style.color='#900020';this.style.borderBottomColor='#900020'">text-transform</a></b></span><br>
+        border-bottom-style<br>
+        border-bottom-color<br>
+        <span style="color:rgb(144,0,32)"><b><a href="index7.html" style="color:#900020;text-decoration:none;" onmouseover="this.style.color='#fff3dd';this.style.borderBottomColor='#fff3dd'" onmouseout="this.style.color='#900020';this.style.borderBottomColor='#900020'">Оформление шрифта</a></b></span>
+		</p>
+		<p class="tit-line"></p>
+		<p style="line-height: 1.5;"><b>Итоговое изображение:</b></p>
+	          <img src="image/2026-05-04_12-26-20.png" width="980" height="1000" alt=""/>
+        </ul> 
+	    </div>
+	
+	
+	
+        <div class="navigation">
+	    <a href="index4.html" class="button">Назад</a>
+	    <a href="index.html" class="button">К оглавлению</a>
+		<a href="index6.html" class="button">Далее</a>
+	    </div>
+	    <hr>
+	    <br>
+	</section>
+</body>
+</html>

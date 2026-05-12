@@ -1,0 +1,249 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Воспоминания</title>
+<link href="style.css" rel="stylesheet">
+</head>
+
+<body>
+	<section>
+		<p class="tit-line"></p>
+		<p class="tit-line"></p>
+		<h1 style="text-align: center; margin:5% 5%; font-size: 40px; padding: 2%">CSS урок 9. Видимость элемента, оформление ссылок css и списков, курсор</h1>
+		<p class="tit-line"></p>
+		<div class="block1" style="line-height: 1.5;"><b>Цель урока: </b> Знакомство со свойствами, управляющими видимостью элемента, свойствами оформления ссылок css и списков. Изменение курсора в CSS</div>
+		<div class="navigation">
+		<a href="index8.html" class="button">Назад</a>
+		<a href="index.html" class="button">К оглавлению</a>
+		<a href="index10.html" class="button">Далее</a>
+		</div>
+	<hr>
+	
+		<div class="content">
+			<h2>Содержание:</h2>
+			<a href="#9_1">Видимость элемента в CSS</a><br>
+			<a href="#9_2" style="margin-left: 30px">display</a><br>
+			<a href="#9_3" style="margin-left: 30px">visibility</a><br>
+			<a href="#9_4" style="margin-left: 30px">overflow</a><br>
+			<a href="#9_5">Изменение курсора в CSS</a><br>
+			<a href="#9_6" style="margin-left: 30px">cursor</a><br>
+			<a href="#9_7">Оформление ссылок в CSS</a><br>
+			<a href="#9_8" style="margin-left: 30px">text-decoration</a><br>
+			<a href="#9_9" style="margin-left: 30px">background-color</a><br>
+			<a href="#9_10">Оформление списков в CSS</a><br>
+			<a href="#9_11" style="margin-left: 30px">list-style-type</a><br>
+			<a href="#9_12" style="margin-left: 30px">list-style-image</a><br>
+			<a href="#9_13" style="margin-left: 30px">list-style-position</a>	
+		</div>
+	
+		<br>
+		<h1 id="9_1" class="ogl">Видимость элемента в CSS</h1>
+		
+			
+		<p class="tit-line"></p>
+		<h1 id="9_2" class="ogl"><span style="color:#B4586D;">DISPLAY</span></h1>
+		<p><b>Возможные значения:</b></p>
+		<ul>
+		   <li style="font-size:20px;margin-bottom:8px;"><span style="color:#FF0000;"><a style="background: #FFD3D3;border-radius: 5px;">block</a></span> ((отображается как блочный)</li>
+		   <li style="font-size:20px;margin-bottom:8px;"><span style="color:#FF0000;"><a style="background: #FFD3D3;border-radius: 5px;">none</a></span> (временно удаляет элемент из документа)</li>
+		   <li style="font-size:20px;margin-bottom:8px;"><span style="color:#FF0000;"><a style="background: #FFD3D3;border-radius: 5px;">inline</a></span> (отображается как встроенный (строчный))</li>
+			<li style="font-size:20px;margin-bottom:8px;"><span style="color:#FF0000;"><a style="background: #FFD3D3;border-radius: 5px;">inline-block</a></span> (внутренняя часть форматируется как блочный элемент, а сам элемент — как встроенный, обтекается другими элементами (подобно img))</li>
+			 <li style="font-size:20px;margin-bottom:8px;"><span style="color:#FF0000;"><a style="background: #FFD3D3;border-radius: 5px;">list-item</a></span> (название)</li>
+		   <li style="font-size:20px;margin-bottom:8px;"><span style="color:#FF0000;"><a style="background: #FFD3D3;border-radius: 5px;">inline-table</a></span> (элемент в качестве таблицы, но при этом таблица является встроенным элементом и происходит ее обтекание другими элементами)</li>
+		   <li style="font-size:20px;margin-bottom:8px;"><span style="color:#FF0000;"><a style="background: #FFD3D3;border-radius: 5px;">table</a></span>  (элемент в качестве блочной таблицы)</li>
+	    </ul>
+		<p class="tit-line"></p>
+		<p><b>Пример:</b></p>
+		<p class="tit-line"></p>
+		фото
+	    <p><b>Результат:</b></p>
+	    фото
+
+	
+        <p class="tit-line"></p>
+	    <h1 id="9_3" class="ogl"><span style="color:#B4586D;">VISIBILITY</span></h1>
+		<p><b>Возможные значения:</b></p>
+	  <ul>
+          <li style="font-size:20px;margin-bottom:8px;"><span style="color:#FF0000;"><a style="background: #FFD3D3; border-radius: 5px;">hidden</a></span> (становится невидимым, но участвует в нормальном потоке элементов)</li>
+		  <li style="font-size:20px;margin-bottom:8px;"><span style="color:#FF0000;"><a style="background: #FFD3D3; border-radius: 5px;">visible</a></span> (отображается как видимый)</li>
+		  <li style="font-size:20px;margin-bottom:8px;"><span style="color:#FF0000;"><a style="background: #FFD3D3; border-radius: 5px;">collapse</a></span> (для содержимого ячеек таблиц, отображаются как будто применен стиль <span style="color:#FF0000;"><a style="background: #FFD3D3; border-radius: 5px;">display: none</a></span> (заданные строки и колонки убираются))</li>
+      </ul>
+		 <p class="tit-line"></p>
+		  <p><b>Пример:</b></p>
+		  фото
+		  <p><b>Результат:</b></p>
+	      фото
+		
+		
+		  <p class="tit-line"></p>
+	      <h1 id="9_4" class="ogl"><span style="color:#B4586D;">OVERFLOW</span></h1>
+		  <p><b>Возможные значения:</b></p>
+		  <p class="tit-line"></p>
+	 <ul>
+          <li style="font-size:20px;margin-bottom:8px;"><span style="color:#FF0000;"><a style="background: #FFD3D3; border-radius: 5px;">repeat-x</a></span> (Фоновый рисунок повторяется только по горизонтали)</li>
+		  <li style="font-size:20px;margin-bottom:8px;"><span style="color:#FF0000;"><a style="background: #FFD3D3; border-radius: 5px;">repeat-y</a></span> (Фоновый рисунок повторяется только по вертикали)</li>
+		  <li style="font-size:20px;margin-bottom:8px;"><span style="color:#FF0000;"><a style="background: #FFD3D3; border-radius: 5px;">no-repeat</a></span> (изображение без повторений)</li>
+	 </ul>
+		  <p class="tit-line"></p>
+		  <p><b>Пример:</b></p>
+		  <p class="tit-line"></p>
+	      фото
+		  <p><b>Результат:</b></p>
+	      фото
+		  <p><b>Тот же самый пример с другим свойством:</b></p>
+		  фото
+		  <p><b>Результат:</b></p>
+		  фото
+		
+		
+		
+		  <p class="tit-line"></p>
+		  <h1 id="9_5" class="ogl">Изменение курсора в CSS</h1>
+		<p class="tit-line"></p>
+		
+		
+	      <h1 id="9_6" class="ogl"><span style="color:#B4586D;">CURSOR</span></h1>
+		  <p><b>Возможные значения:</b></p>
+		  <p class="tit-line"></p>
+		  <ul>
+          <li style="font-size:20px;margin-bottom:8px;"><span style="color:#FF0000;"><a style="background: #FFD3D3; border-radius: 5px;">url('путь к файлу')</a></span> (свой собственный курсор из файла изображения)</li>
+		  <li style="font-size:20px;margin-bottom:8px;"><span style="color:#FF0000;"><a style="background: #FFD3D3; border-radius: 5px;">crosshair</a></span></li>
+		  <li style="font-size:20px;margin-bottom:8px;"><span style="color:#FF0000;"><a style="background: #FFD3D3; border-radius: 5px;">help</a></span></li>
+		  <li style="font-size:20px;margin-bottom:8px;"><span style="color:#FF0000;"><a style="background: #FFD3D3; border-radius: 5px;">move</a></span></li>
+		  <li style="font-size:20px;margin-bottom:8px;"><span style="color:#FF0000;"><a style="background: #FFD3D3; border-radius: 5px;">pointer</a></span></li>
+		  <li style="font-size:20px;margin-bottom:8px;"><span style="color:#FF0000;"><a style="background: #FFD3D3; border-radius: 5px;">progress</a></span></li>
+		  <li style="font-size:20px;margin-bottom:8px;"><span style="color:#FF0000;"><a style="background: #FFD3D3; border-radius: 5px;">text</a></span></li>
+		  <li style="font-size:20px;margin-bottom:8px;"><span style="color:#FF0000;"><a style="background: #FFD3D3; border-radius: 5px;">wait</a></span></li>
+		  <li style="font-size:20px;margin-bottom:8px;"><span style="color:#FF0000;"><a style="background: #FFD3D3; border-radius: 5px;">n-resize</a></span></li>
+		  <li style="font-size:20px;margin-bottom:8px;"><span style="color:#FF0000;"><a style="background: #FFD3D3; border-radius: 5px;">ne-resize</a></span></li>
+		  <li style="font-size:20px;margin-bottom:8px;"><span style="color:#FF0000;"><a style="background: #FFD3D3; border-radius: 5px;">e-resize</a></span></li>
+		  <li style="font-size:20px;margin-bottom:8px;"><span style="color:#FF0000;"><a style="background: #FFD3D3; border-radius: 5px;">se-resize</a></span></li>
+		  <li style="font-size:20px;margin-bottom:8px;"><span style="color:#FF0000;"><a style="background: #FFD3D3; border-radius: 5px;">s-resize</a></span></li>
+	      <li style="font-size:20px;margin-bottom:8px;"><span style="color:#FF0000;"><a style="background: #FFD3D3; border-radius: 5px;">sw-resize</a></span></li>
+		  <li style="font-size:20px;margin-bottom:8px;"><span style="color:#FF0000;"><a style="background: #FFD3D3; border-radius: 5px;">w-resize</a></span></li>
+		  <li style="font-size:20px;margin-bottom:8px;"><span style="color:#FF0000;"><a style="background: #FFD3D3; border-radius: 5px;">nw-resize</a></span></li>
+      </ul>
+		  <p class="tit-line"></p>
+		  <p><b>Пример:</b></p>
+		<p class="tit-line"></p>
+	     фото
+          <p><b>Результат:</b></p>
+		  фото
+		
+		
+		<p class="tit-line"></p>
+		<h1 id="9_7" class="ogl">Оформление ссылок в CSS</h1>
+		<p>Для оформления ссылок в css, прежде всего, следует использовать псевдоклассы, рассмотренные ранее.</p>
+		<p class="tit-line"></p>
+		<p>Для стилизации ссылок также используются следующие свойства CSS:</p>
+		<p class="tit-line"></p>
+		
+		
+		
+	      <h1 id="9_8" class="ogl"><span style="color:#B4586D;">TEXT-DECORATION</span></h1>
+		<p>со значением <span style="color:#FF0000;"><a style="background: #FFD3D3; border-radius: 5px;">none</a></span>: смотри пример здесь.</p>
+		<p class="tit-line"></p>
+		
+		
+  
+      <h1 id="9_9" class="ogl"><span style="color:#B4586D;">BACKGROUND COLOR</span></h1>
+         <p>например, при наведении курсора менять цвет фона ссылки; смотри пример здесь.</p>
+		<div class="block1">
+			<ul>
+		<p style="line-height: 1.5;"><b>Задание:</b> Создать страницу с меню. Пункты меню поместить в таблицу. По наведению курсора мыши на пункт, подсвечивать ячейку и менять вид курсора мыши. Оформить пункты как гиперссылки (для гиперссылок убрать оформление).</p><p class="tit-line"></p>
+				<p style="line-height: 0.5;"><b>Использовать свойства:</b></p>
+				<p style="line-height: 0.5;"> псевдокласс hover</p>
+            <p style="line-height: 0.5;">свойство text-decoration</p><p class="tit-line"></p>	
+				<p><b>Желаемый результат:</b></p>
+				фото
+		</ul>
+		</div>
+		
+		<p class="tit-line"></p>
+		<h1 id="9_10" class="ogl">Оформление списков в CSS</h1>
+	   <p>Для оформления списков используются следующие свойства:</p>
+		
+		
+		
+		  <p class="tit-line"></p>
+	      <h1 id="9_11" class="ogl"><span style="color:#B4586D;">LIST STYLE-TYPE</span></h1>
+		  <p><b>Возможные значения:</b></p>
+		  <p class="tit-line"></p>
+		<ul>
+		   <li style="font-size:20px;margin-bottom:8px;"><span style="color:#FF0000;"><a style="border-radius: 5px;">none</a></span>  (отмена маркера или нумерации)</li>
+		   <li style="font-size:20px;margin-bottom:8px;"><span style="color:#FF0000;"><a style="border-radius: 5px;">disc</a></span></li>
+		   <li style="font-size:20px;margin-bottom:8px;"><span style="color:#FF0000;"><a style="border-radius: 5px;">circle</a></span></li>
+		   <li style="font-size:20px;margin-bottom:8px;"><span style="color:#FF0000;"><a style="border-radius: 5px;">square</a></span> </li>
+		   <li style="font-size:20px;margin-bottom:8px;"><span style="color:#FF0000;"><a style="border-radius: 5px;">decimal</a></span></li>
+		   <li style="font-size:20px;margin-bottom:8px;"><span style="color:#FF0000;"><a style="border-radius: 5px;">decimal-leading-zero</a></span></li>
+		   <li style="font-size:20px;margin-bottom:8px;"><span style="color:#FF0000;"><a style="border-radius: 5px;">armenian</a></span></li>
+		   <li style="font-size:20px;margin-bottom:8px;"><span style="color:#FF0000;"><a style="border-radius: 5px;">georgian</a></span></li>
+		   <li style="font-size:20px;margin-bottom:8px;"><span style="color:#FF0000;"><a style="border-radius: 5px;">lower-alpha</a></span></li>
+		   <li style="font-size:20px;margin-bottom:8px;"><span style="color:#FF0000;"><a style="border-radius: 5px;">upper-alpha</a></span></li>
+		   <li style="font-size:20px;margin-bottom:8px;"><span style="color:#FF0000;"><a style="border-radius: 5px;">lower-greek</a></span></li>
+		   <li style="font-size:20px;margin-bottom:8px;"><span style="color:#FF0000;"><a style="border-radius: 5px;">lower-latin</a></span></li>
+		   <li style="font-size:20px;margin-bottom:8px;"><span style="color:#FF0000;"><a style="border-radius: 5px;">upper-latin</a></span></li>
+		   <li style="font-size:20px;margin-bottom:8px;"><span style="color:#FF0000;"><a style="border-radius: 5px;">lower-roman</a></span></li>
+		   <li style="font-size:20px;margin-bottom:8px;"><span style="color:#FF0000;"><a style="border-radius: 5px;">upper-roman</a></span></li>
+	    </ul>
+	<p class="tit-line"></p>
+		  <p><b>Пример:</b></p>
+		<p class="tit-line"></p>
+	     фото
+          <p><b>Результат:</b></p>
+		  фото
+		
+		
+		  <p class="tit-line"></p>
+	      <h1 id="9_12" class="ogl"><span style="color:#B4586D;">LIST STYLE-IMAGE</span></h1>
+		  <p><b>Возможные значения:</b></p>
+		  <p class="tit-line"></p>
+		<ul>
+		 <li style="font-size:20px;margin-bottom:8px;"><span style="color:#FF0000;"><a style="border-radius: 5px;">url('путь к файлу') </a></span>(установка своего изображения)</li>
+	    </ul>
+		<p class="tit-line"></p>
+		  <p><b>Пример:</b></p>
+		<p class="tit-line"></p>
+	     фото
+          <p><b>Результат:</b></p>
+		  фото
+		
+		
+		
+		  <p class="tit-line"></p>
+	      <h1 id="9_13" class="ogl"><span style="color:#B4586D;">LIST STYLE-POSITION(ПОЛОЖЕНИЕ МАРКЕРА ИЛИ НОМЕРА)</span></h1>
+		  <p><b>Возможные значения:</b></p>
+		  <p class="tit-line"></p>
+		<ul>
+		 <li style="font-size:20px;margin-bottom:8px;"><span style="color:#FF0000;"><a style="border-radius: 5px;">inside </a></span> (Маркер является частью текстового блока и отображается в элементе списка)</li>
+		 <li style="font-size:20px;margin-bottom:8px;"><span style="color:#FF0000;"><a style="border-radius: 5px;">outside </a></span> (Текст выравнивается по левому краю, а маркеры размещаются за пределами текстового блока)</li>
+	    </ul>
+		<p class="tit-line"></p>
+		  <p><b>Пример:</b></p>
+		<p class="tit-line"></p>
+	     фото
+          <p><b>Результат:</b></p>
+		  фото
+		
+		
+		<div class="block2">
+		<ul>
+		<p><b>Задание:</b> Создать маркированный список, вместо маркеров установить изображение.</p><br>
+		<p><b>Примерный результат:</b></p>
+		фото
+		</ul>
+		</div>
+		
+		
+		
+<div class="navigation">
+	    <a href="index8.html" class="button">Назад</a>
+	    <a href="index.html" class="button">К оглавлению</a>
+		<a href="index10.html" class="button">Далее</a>
+	    </div>
+	   <hr>
+	    <br>
+	</section>
+</body>
+</html>

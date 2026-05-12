@@ -1,0 +1,151 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Воспоминания</title>
+<link href="style.css" rel="stylesheet">
+</head>
+
+<body>
+	<section>
+		<p class="tit-line"></p>
+		<p class="tit-line"></p>
+		<h1 style="text-align: center; margin:5% 5%; font-size: 40px; padding: 2%">CSS урок 7. Основные стили CSS: свойства шрифта</h1>
+		<p class="tit-line"></p>
+		<div class="block1" style="line-height: 1.5;"><b>Цель урока: </b> Знакомство со свойствами шрифта css</div>
+		<div class="navigation">
+		<a href="index6.html" class="button">Назад</a>
+		<a href="index.html" class="button">К оглавлению</a>
+		<a href="index8.html" class="button">Далее</a>
+		</div>
+	<hr>
+	
+		<div class="content">
+			<h2>Содержание:</h2>
+			<a href="#7_1">Свойства штрифта css</a><br>
+			<a href="#7_2" style="margin-left: 30px">font-family (семейство штрифта)</a><br>
+			<a href="#7_3" style="margin-left: 30px">font-style (стиль шрифта)</a><br>
+			<a href="#7_4" style="margin-left: 30px">font-size (размер шрифта)</a><br>
+			<a href="#7_5" style="margin-left: 30px">font-weight (ширина линий шрифта)</a><br>
+			<a href="#7_6">Краткая запись font</a><br>					
+		</div>
+	
+		<br>
+		<h1 id="7_1" class="ogl">Свойства штрифта css</h1>
+		<p class="tit-line"></p>
+		<p>Перечислим основные свойства шрифта и их значения</p>
+			
+			
+		<p class="tit-line"></p>
+		<h1 id="7_2" class="ogl"><span style="color:#B4586D;">FONT-FAMILY (СЕМЕЙСТВО ШРИФТА)</span></h1>
+		<p><b>Возможные значения:</b></p>
+		<p class="tit-line"></p>
+		<ul>
+		   <li style="font-size:20px;margin-bottom:8px;"><span style="color:#FF0000;"><a style="border-radius: 5px;">Serif</a></span> (серифный шрифт с засечками)</li>
+		   <li style="font-size:20px;margin-bottom:8px;"><span style="color:#FF0000;"><a style="border-radius: 5px;">Sans-serif</a></span> (без засечек)</li>
+		   <li style="font-size:20px;margin-bottom:8px;"><span style="color:#FF0000;"><a style="border-radius: 5px;">Monospace</a></span> (моноширинный)</li>
+			<li style="font-size:20px;margin-bottom:8px;"><span style="color:#FF0000;"><a style="border-radius: 5px;">Название шрифта</a></span> </li>
+	    </ul>
+		 фото
+		<p class="tit-line"></p>
+		<p><b>Пример:</b></p>
+		<p class="tit-line"></p>
+		фото
+	    <p><b>Результат:</b></p>
+	    фото
+
+	
+        <p class="tit-line"></p>
+	    <h1 id="7_3" class="ogl"><span style="color:#B4586D;">FONT-STYLE (СТИЛЬ ШРИФТА)</span></h1>
+		<p>Выравнивание текста по горизонтали</p>
+		<p><b>Возможные значения:</b></p>
+		<p class="tit-line"></p>
+	  <ul>
+          <li style="font-size:20px;margin-bottom:8px;"><span style="color:#FF0000;"><a style="border-radius: 5px;">normal</a></span> (обычный текст)</li>
+		  <li style="font-size:20px;margin-bottom:8px;"><span style="color:#FF0000;"><a style="border-radius: 5px;">italic</a></span> (курсив)</li>
+		  <li style="font-size:20px;margin-bottom:8px;"><span style="color:#FF0000;"><a style="border-radius: 5px;">oblique</a></span> (наклонный текст)</li>
+      </ul>
+		  <p class="tit-line"></p>
+		  <p><b>Пример:</b></p>
+		<p class="tit-line"></p>
+		  фото
+		  <p><b>Результат:</b></p>
+	      фото
+		
+		
+		  <p class="tit-line"></p>
+	      <h1 id="7_4" class="ogl"><span style="color:#B4586D;">FONT-SIZE (РАЗМЕР ШРИФТА)</span></h1>
+		  <p><b>Возможные значения:</b></p>
+		  <p class="tit-line"></p>
+	 <ul>
+          <li style="font-size:20px;margin-bottom:8px;"><span style="color:#FF0000;"><a style="border-radius: 5px;">px</a></span> (обычный текст)</li>
+		  <li style="font-size:20px;margin-bottom:8px;"><span style="color:#FF0000;"><a style="border-radius: 5px;">em</a></span> (16px=1em)</li>
+		  <li style="font-size:20px;margin-bottom:8px;">дополнительные:</li>
+		 <ul>
+		  <li style="font-size:20px;margin-bottom:8px;"><span style="color:#FF0000;"><a style="border-radius: 5px;">xx-small, x-small, small, medium, large, x-large, xx-large, smaller, larger</a></span></li>
+		 </ul>
+     </ul>
+		  <p class="tit-line"></p>
+		  <p><b>Пример:</b></p>
+		<p class="tit-line"></p>
+	      фото
+		  <p><b>Результат:</b></p>
+	      фото
+		<p class="tit-line"></p>
+		<div class="block3">
+			<ul>
+			<p><b>Важно:</b> <span style="color:#FF0000;"><a style="background: #FFD3D3; border-radius: 5px;">1em</a></span> соответствует размеру шрифта по умолчанию. Размер шрифта по умолчанию в браузерах устанавливается равным 16 пикселям.<br>
+			<b>Получаем:</b> <span style="color:#FF0000;"><a style="background: #FFD3D3; border-radius: 5px;">1em = 16px</a></span></p>
+			<p>Размер шрифта в em можно перевести из пикселей по формуле:
+            <span style="color:#FF0000;"><a style="background: #FFD3D3; border-radius: 5px;">пиксели/16=em</a></span></p>
+			 </ul></div>
+		
+		
+		  <p class="tit-line"></p>
+	      <h1 id="7_5" class="ogl"><span style="color:#B4586D;">FONT-WEIGHT (ШИРИНА ЛИНИЙ ШРИФТА)</span></h1>
+		  <p><b>Возможные значения:</b></p>
+		  <p class="tit-line"></p>
+		  <ul>
+          <li style="font-size:20px;margin-bottom:8px;"><span style="color:#FF0000;"><a style="background: #FFD3D3; border-radius: 5px;">normal</a></span> (обычный шрифт)</li>
+		  <li style="font-size:20px;margin-bottom:8px;"><span style="color:#FF0000;"><a style="background: #FFD3D3; border-radius: 5px;">bold</a></span> («жирный»)</li>
+		  <li style="font-size:20px;margin-bottom:8px;"><span style="color:#FF0000;"><a style="background: #FFD3D3; border-radius: 5px;">bolder</a></span> («жирнее»)</li>
+		  <li style="font-size:20px;margin-bottom:8px;"><span style="color:#FF0000;"><a style="background: #FFD3D3; border-radius: 5px;">lighter</a></span> (менее «жирный»)</li>
+      </ul>
+		 <p class="tit-line"></p>
+		 <p>Первые два значения — <b>абсолютные значения</b>. Вторые два — <b>относительные</b> (зависят от соседних или родительских элементов)</p>
+		  <p><b>Пример:</b></p>
+	     фото
+          <p><b>Результат:</b></p>
+		  фото
+		
+		
+		<p class="tit-line"></p>
+	      <h1 id="7_6" class="ogl"><span style="color:#B4586D;">Краткая запись font</span></h1>
+		<p class="tit-line"></p>
+		  <p>Свойства шрифта задаются в следующем порядке:</p>
+		<p class="tit-line"></p>
+		  фото
+		<p class="tit-line"></p>
+		  <p><b>Пример:</b></p>
+		<p class="tit-line"></p>
+	      фото
+         <div class="block3">
+			 <ul>
+		<p>Обязательны свойства:<br>
+			 <span style="color:#FF0000;"><a style="background: #FFD3D3; border-radius: 5px;">font-size</a></span> и <span style="color:#FF0000;"><a style="background: #FFD3D3; border-radius: 5px;">font-family</a></span></p>
+		</ul></div>
+		
+		
+		
+		
+		
+<div class="navigation">
+	    <a href="index6.html" class="button">Назад</a>
+	    <a href="index.html" class="button">К оглавлению</a>
+		<a href="index8.html" class="button">Далее</a>
+	    </div>
+	    <hr>
+	    <br>
+	</section>
+</body>
+</html>

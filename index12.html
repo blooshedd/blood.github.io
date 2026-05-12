@@ -1,0 +1,247 @@
+
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Воспоминания</title>
+<link href="style.css" rel="stylesheet">
+</head>
+
+<body>
+	<section>
+		<p class="tit-line"></p>
+		<p class="tit-line"></p>
+		<h1 style="text-align: center; margin:5% 5%; font-size: 40px; padding: 2%">CSS урок 12. Позиционирование блоков</h1>
+		<p class="tit-line"></p>
+		<div class="block1"><b>Цель урока: </b> Знакомство с понятием позиционирования блоков и элементов в CSS. Фиксированное, относительное и абсолютное позиционирование.</div>
+		<div class="navigation">
+		<a href="index7.html" class="button">Назад</a>
+		<a href="index.html" class="button">К оглавлению</a>
+		<a href="index9.html" class="button">Далее</a>
+		</div>
+	<hr>
+	
+		<div class="content">
+			<h2>Содержание:</h2>
+			<a href="#12_1">Позиционирование блоков</a><br>
+			<a href="#12_2" style="margin-left: 30px">Статическое позиционирование</a><br>
+			<a href="#12_3" style="margin-left: 30px">Фиксированное позиционирование CSS</a><br>
+			<a href="#12_4" style="margin-left: 30px">Относительное позиционирование CSS</a><br>
+			<a href="#12_5" style="margin-left: 30px">Абсолютное позиционирование CSS</a><br>
+			<a href="#12_6">Перекрытие слоев в CSS</a><br>
+		</div>
+	
+		<p class="tit-line"></p>
+		<h1 id="12_1" class="ogl">Позиционирование блоков</h1>
+		<p class="tit-line"></p>
+		<p>Элемент в html — это прямоугольник; <b>схемы позиционирования определяют где должен располагаться этот прямоугольник</b>, а также как он должен влиять на элементы вокруг себя.</p>
+		<p class="tit-line"></p>
+		<p>Рассмотрим <b>два элемента, служащих для стилизации</b>:</p>
+		<p class="tit-line"></p>
+		<ul>
+		<p>1. Тег <span style="color:#FF0000;"><a style="background: #FFD3D3; border-radius: 5px;">div</a></span> — это <b>блочный элемент</b>, который может содержащать другие блоки, такие как, например, изображения и таблицы.</p>
+		<p><b>Пример:</b></p>
+		<p class="tit-line"></p>
+		фото
+		<p class="tit-line"></p>
+		<p>2. Тег <span style="color:#FF0000;"><a style="background: #FFD3D3; border-radius: 5px;">span</a></span> — <b>строчный элемент</b>, содержащий любой текст; элемент можно вставить прямо в строку (встраиваемый элемент). Может заменить собой элементы: <span style="color:#FF0000;"><a style="background: #FFD3D3; border-radius: 5px;">FONT</a></span>, <span style="color:#FF0000;"><a style="background: #FFD3D3; border-radius: 5px;">I</a></span>, <span style="color:#FF0000;"><a style="background: #FFD3D3; border-radius: 5px;">B</a></span>, <span style="color:#FF0000;"><a style="background: #FFD3D3; border-radius: 5px;">U</a></span> и т.п.</p>
+		</ul>
+		<p><b>Пример:</b></p>
+		<p class="tit-line"></p>
+		фото
+		<p class="tit-line"></p>
+		
+	
+		<h1 style="font-size: 35px;" id="12_2" class="ogl">Статическое позиционирование</h1>
+		<p class="tit-line"></p>
+		
+		
+	   
+		<h1 class="ogl"><span style="color:#B4586D;">POSITION: STATIC</span></h1>
+		<p style="line-height: 1.5;"><b>Статическое позиционирование</b> — это позиционирование элемента по умолчанию. Такой элемент занимает на веб-странице место соответственно своему положению в html-коде, т.е. определенное в нормальном потоке.</p>
+		<p class="tit-line"></p>
+		<div class="block3">
+		<ul>
+		<p><b>Нормальный поток элементов</b> — это отображение элементов соответственно их месту в коде</p>
+		</ul>
+		</div>
+		<p>На статически позиционированный элемент не действуют свойства <span style="color:#FF0000;"><a style="background: #FFD3D3; border-radius: 5px;">top</a></span>, <span style="color:#FF0000;"><a style="background: #FFD3D3; border-radius: 5px;">bottom</a></span>, <span style="color:#FF0000;"><a style="background: #FFD3D3; border-radius: 5px;">left</a></span> и <span style="color:#FF0000;"><a style="background: #FFD3D3; border-radius: 5px;">right</a></span>.</p>
+		<p class="tit-line"></p>
+	    <p><b>Пример:</b></p>
+		фото
+		<p class="tit-line"></p>
+		<p class="tit-line"></p>
+		
+		
+		<h1 style="font-size: 35px;" id="12_3" class="ogl">Фиксированное позиционирование CSS</h1>
+		<p class="tit-line"></p>
+		<p class="tit-line"></p>
+		
+		
+		
+		<h1 id="11_2" class="ogl"><span style="color:#B4586D;">POSITION: FIXED</span></h1>
+		<p class="tit-line"></p>
+		<li class="square" style="font-size:20px;margin-bottom:8px;line-height: 1.5;">Фиксированно позиционированный элемент <b>удаляется из потока HTML</b> и позиционируется относительно окна браузера. Элемент как будто «плавает» над другими тегами страницы.</li>
+		<li class="square" style="font-size:20px;margin-bottom:8px;line-height: 1.5;">Он остается на месте при прокрутке страницы.</li>
+		<li class="square" style="font-size:20px;margin-bottom:8px;line-height: 1.5;">При фиксированном позиционировании <b>необходимо задать координаты расположения элемента</b>.</li>	   
+		<p class="tit-line"></p>
+	    <p><b>Установка координат:</b></p>
+		<p class="tit-line"></p>
+		<li class="square" style="font-size:20px;margin-bottom:8px;line-height: 1.5;"><span style="color:#FF0000;"><a style="background: #FFD3D3; border-radius: 5px;">top</a></span> | <span style="color:#FF0000;"><a style="background: #FFD3D3; border-radius: 5px;">bottom</a></span></li>
+		
+		<li class="square" style="font-size:20px;margin-bottom:8px;line-height: 1.5;"><span style="color:#FF0000;"><a style="background: #FFD3D3; border-radius: 5px;">left</a></span> |<span style="color:#FF0000;"><a style="background: #FFD3D3; border-radius: 5px;"> right</a></span></li>
+		<p class="tit-line"></p>
+		<p><b>Значения:</b></p>
+		<li class="square" style="font-size:20px;margin-bottom:8px;line-height: 1.5;"><span style="color:#FF0000;"><a style="background: #FFD3D3; border-radius: 5px;">auto</a></span> | <span style="color:#FF0000;"><a style="background: #FFD3D3; border-radius: 5px;">величина</a></span> | <span style="color:#FF0000;"><a style="background: #FFD3D3; border-radius: 5px;">%</a></span></li>
+		<p class="tit-line"></p>
+		<p><b>Пример:</b></p>
+		<p class="tit-line"></p>
+		фото
+		<p class="tit-line"></p>
+		<p><b>Результат:</b></p>
+		<p class="tit-line"></p>
+		фото
+		<p class="tit-line"></p>
+		<p class="tit-line"></p>
+		
+		
+		<h1 style="font-size: 35px;" id="12_4" class="ogl">Относительное позиционирование CSS</h1>
+		<p class="tit-line"></p>
+		<p class="tit-line"></p>
+		
+		
+		
+		<h1 id="11_2" class="ogl"><span style="color:#B4586D;">POSITION: RELATIVE</span></h1>
+		<p class="tit-line"></p>
+		<li class="square" style="font-size:20px;margin-bottom:8px;line-height: 1.5;">Относительное позиционирование <b>располагает элемент относительно его нормального положения</b>.</li>
+		<li class="square" style="font-size:20px;margin-bottom:8px;line-height: 1.5;">При относительном позиционировании обязательна <b>установка координат</b> расположения элемента относительно его нормального положения.</li>	   
+		<p class="tit-line"></p>
+	    <p><b>Установка координат:</b></p>
+		<p class="tit-line"></p>
+		<li class="square" style="font-size:20px;margin-bottom:8px;line-height: 1.5;"><span style="color:#FF0000;"><a style="background: #FFD3D3; border-radius: 5px;">top</a></span> | <span style="color:#FF0000;"><a style="background: #FFD3D3; border-radius: 5px;">bottom</a></span></li>
+		
+		<li class="square" style="font-size:20px;margin-bottom:8px;line-height: 1.5;"><span style="color:#FF0000;"><a style="background: #FFD3D3; border-radius: 5px;">left</a></span> |<span style="color:#FF0000;"><a style="background: #FFD3D3; border-radius: 5px;"> right</a></span></li>
+		<p class="tit-line"></p>
+		
+		<p><b>Значения:</b></p>
+		<li class="square" style="font-size:20px;margin-bottom:8px;line-height: 1.5;"><span style="color:#FF0000;"><a style="background: #FFD3D3; border-radius: 5px;">auto</a></span> | <span style="color:#FF0000;"><a style="background: #FFD3D3; border-radius: 5px;">величина</a></span> | <span style="color:#FF0000;"><a style="background: #FFD3D3; border-radius: 5px;">%</a></span></li>
+		<p class="tit-line"></p>
+		фото
+		<p class="tit-line"></p>
+		<p><b>Пример:</b></p>
+		<p class="tit-line"></p>
+		фото
+		<p class="tit-line"></p>
+		<p><b>Результат:</b></p>
+		<p class="tit-line"></p>
+		фото
+		<p class="tit-line"></p>
+		<p class="tit-line"></p>
+		
+		
+		<h1 style="font-size: 35px;" id="12_5" class="ogl">Абсолютное позиционирование CSS</h1>
+		<p class="tit-line"></p>
+		<p class="tit-line"></p>
+		
+		
+		
+		<h1 id="11_2" class="ogl"><span style="color:#B4586D;">POSITION: ABSOLUTE</span></h1>
+		<p class="tit-line"></p>
+		<li class="square" style="font-size:20px;margin-bottom:8px;line-height: 1.5;">Абсолютная позиция отсчитывается от ближайшего к элементу родительского контейнера, который имеет позиционирование <span style="color:#FF0000;"><a style="background: #FFD3D3; border-radius: 5px;">absolute</a></span>, <span style="color:#FF0000;"><a style="background: #FFD3D3; border-radius: 5px;">relative</a></span> или <span style="color:#FF0000;"><a style="background: #FFD3D3; border-radius: 5px;">fixed</a></span> (кроме <span style="color:#FF0000;"><a style="background: #FFD3D3; border-radius: 5px;">static</a></span>). Если такой родительский элемент отсутствует, то им считается окно браузера.</li>
+		<li class="square" style="font-size:20px;margin-bottom:8px;line-height: 1.5;">При абсолютном позиционировании обязательна <b>установка координат</b> расположения элемента относительно его родителя (см. пред. пункт).</li>	   
+		<p class="tit-line"></p>
+	    <p><b>Установка координат:</b></p>
+		<p class="tit-line"></p>
+		<li class="square" style="font-size:20px;margin-bottom:8px;line-height: 1.5;"><span style="color:#FF0000;"><a style="background: #FFD3D3; border-radius: 5px;">top</a></span> | <span style="color:#FF0000;"><a style="background: #FFD3D3; border-radius: 5px;">bottom</a></span></li>
+		
+		<li class="square" style="font-size:20px;margin-bottom:8px;line-height: 1.5;"><span style="color:#FF0000;"><a style="background: #FFD3D3; border-radius: 5px;">left</a></span> |<span style="color:#FF0000;"><a style="background: #FFD3D3; border-radius: 5px;"> right</a></span></li>
+		<p class="tit-line"></p>
+		
+		<p><b>Значения:</b></p>
+		<li class="square" style="font-size:20px;margin-bottom:8px;line-height: 1.5;"><span style="color:#FF0000;"><a style="background: #FFD3D3; border-radius: 5px;">auto</a></span> | <span style="color:#FF0000;"><a style="background: #FFD3D3; border-radius: 5px;">величина</a></span> | <span style="color:#FF0000;"><a style="background: #FFD3D3; border-radius: 5px;">%</a></span></li>
+		<p class="tit-line"></p>
+		фото
+		<p class="tit-line"></p>
+		<p><b>Пример:</b></p>
+		<p class="tit-line"></p>
+		фото
+		<p class="tit-line"></p>
+		<p><b>Результат:</b></p>
+		<p class="tit-line"></p>
+		фото
+		<p class="tit-line"></p>
+		<p><b>Пример взаимодействия с родительским блоком:</b></p>
+		<p class="tit-line"></p>
+		<p class="tit-line"></p>
+		<span class="num">1.</span><br>
+		фото
+		<p class="tit-line"></p>
+		<p><b>Результат:</b></p>
+		<p class="tit-line"></p>
+		фото
+		<p class="tit-line"></p>
+		<span class="num">2.</span><br>
+		фото
+		<p class="tit-line"></p>
+		<p><b>Результат:</b></p>
+		<p class="tit-line"></p>
+		<p class="tit-line"></p>
+		
+		
+		<h1 style="font-size: 35px;" id="12_6" class="ogl">Перекрытие слоев в CSS</h1>
+		<p class="tit-line"></p>
+		<p class="tit-line"></p>
+		
+		
+		
+		<h1 id="11_2" class="ogl"><span style="color:#B4586D;">Z-INDEX</span></h1>
+		<p class="tit-line"></p>
+		<p>Блоки с абсолютным позиционированием могут быть расположены на разных уровнях, которые определяются свойством z-index.</p>
+		<p class="tit-line"></p>
+		<p><b>Значения:</b></p>
+		<li class="square" style="font-size:20px;margin-bottom:8px;line-height: 1.5;"><span style="color:#FF0000;"><a style="background: #FFD3D3; border-radius: 5px;">auto</a></span> «нулевой уровень», задаваемый по умолчанию;</li>
+		<li class="square" style="font-size:20px;margin-bottom:8px;line-height: 1.5;"><b>отрицательное число</b> — объект располагается «ниже» нулевого уровня (удаляется вглубь, под элементы);</li>	   
+		<li class="square" style="font-size:20px;margin-bottom:8px;line-height: 1.5;"><b>положительное число</b> — объект располагается «выше» нулевого уровня.</li>	   
+		<p class="tit-line"></p>
+		<p><b>Пример:</b></p>
+		<p class="tit-line"></p>
+		фото
+		<p class="tit-line"></p>
+		<p><b>Результат:</b></p>
+		<p class="tit-line"></p>
+		фото
+		<p class="tit-line"></p>
+		<div class="block1">
+		<ul>
+		<p style="line-height: 1.5;"><b>Задание:</b> Скачайте файл.<br>
+        Добейтесь эффекта, как на итоговом изображении, используя файл logo.png в качестве тега <span style="color:#FF0000;"><a style="background: #FFD3D3; border-radius: 5px;">img</a></span>.</p>
+		<p class="tit-line"></p>
+        <p>Используйте следующие свойства CSS:</p>
+		<p class="tit-line"></p>
+		<li style="line-height: 1.5;"><span style="color:#FF0000;"><a style="background: #FFD3D3; border-radius: 5px;">position</a></span>:</li>
+		<li style="line-height: 1.5;"><span style="color:#FF0000;"><a style="background: #FFD3D3; border-radius: 5px;">z-index</a></span>:</li>
+		<li style="line-height: 1.5;"><span style="color:#FF0000;"><a style="background: #FFD3D3; border-radius: 5px;">top</a></span>:</li>
+		<li style="line-height: 1.5;"><span style="color:#FF0000;"><a style="background: #FFD3D3; border-radius: 5px;">left</a></span>:</li>
+		<li style="line-height: 1.5;"><span style="color:#FF0000;"><a style="background: #FFD3D3; border-radius: 5px;">opacity</a></span>:0.5; /* прозрачность */</li>
+		<li style="line-height: 1.5;"><span style="color:#FF0000;"><a style="background: #FFD3D3; border-radius: 5px;">filter</a></span>: <span style="color:#FF0000;"><a style="background: #FFD3D3; border-radius: 5px;">Alpha</a></span>(<span style="color:#FF0000;"><a style="background: #FFD3D3; border-radius: 5px;">Opacity</a></span>=50); /* прозрачность для IE */</li>
+		<p class="tit-line"></p>
+		<p><b>Требуемый результат:</b></p>
+		фото
+		</ul>
+		</div>
+
+		
+		
+		
+		<br>
+		
+<div class="navigation">
+	    <a href="index11.html" class="button">Назад</a>
+	    <a href="index.html" class="button">К оглавлению</a>
+		<a href="index13.html" class="button">Далее</a>
+	    </div>
+	   <hr>
+	    <br>
+	</section>
+</body>
+</html>
